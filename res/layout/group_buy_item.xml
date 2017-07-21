@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="120.0dp"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:background="@drawable/arrow_gray_right"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_img"
+            android:layout_width="100.0dp"
+            android:layout_height="100.0dp"
+            android:layout_marginLeft="5.0dp"
+            android:layout_marginTop="5.0dp"
+            android:background="@drawable/icon" >
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="120.0dp"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="2.0dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_foodname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="name"
+                android:textColor="#ff0000"
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:id="@+id/tv_foodinfo"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dp"
+                android:ellipsize="marquee"
+                android:text="加载中..."
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/tv_point"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="公益积分：10"
+                android:textColor="#000000"
+                android:textSize="10.0sp" />
+
+            <TextView
+                android:id="@+id/tv_foodprice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="price"
+                android:textColor="#000000"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

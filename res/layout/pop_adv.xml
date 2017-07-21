@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+	
+	<android.support.v4.view.ViewPager
+        android:id="@+id/vs_select"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+	<Button
+        android:id="@+id/btnCancel"
+        android:layout_width="40.0dp"
+        android:layout_height="40.0dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/gray_black_round_circular_shape"
+        android:gravity="center"
+        android:text="X"
+        android:textColor="@color/topbar_bg_color"
+        android:textSize="26.0dp"
+        android:visibility="gone" />
+</RelativeLayout>

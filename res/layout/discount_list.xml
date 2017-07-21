@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/index_title_bg" >
+
+        <TextView
+            android:id="@+id/title_bar_content_tv"
+            style="@style/title_bar_content_sytle"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="优惠" />
+
+        <Button
+            android:id="@+id/title_bar_right_btn"
+            style="@style/title_bar_button_sytle"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/title_bar_right_button"
+            android:text="购物车"
+            android:textColor="#ffffff"
+            android:textSize="10.0dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="3.0dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="60.0dp"
+            android:layout_height="20.0dp"
+            android:background="@drawable/left_btn_pressed"
+            android:text="买撘赠"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="60.0dp"
+            android:layout_height="20.0dp"
+            android:background="@drawable/middle_btn_normal"
+            android:text="秒杀"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="60.0dp"
+            android:layout_height="20.0dp"
+            android:background="@drawable/middle_btn_normal"
+            android:text="限量"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_width="60.0dp"
+            android:layout_height="20.0dp"
+            android:background="@drawable/right_btn_normal"
+            android:text="团购"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <!-- 商家 图片区域 -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vs_select"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:fitsSystemWindows="true"  
+    android:clipToPadding="true"
+    android:layout_height="@dimen/title_bar_height"
+    android:background="@color/topbar_bg_color" >
+
+    
+
+    <TextView
+        android:id="@+id/title_bar_content_tv"
+        style="@style/title_bar_content_sytle"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:text="注册" />
+	<Button
+        android:id="@+id/title_bar_back_btn"
+        style="@style/title_bar_button_sytle"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/title_back_bg"
+        android:layout_marginLeft="10.0dp"
+         />
+    <Button
+        android:id="@+id/title_bar_right_btn"
+        style="@style/title_bar_button_sytle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="4dip"
+        android:layout_marginTop="5dip"
+        android:textColor="#ffffff"
+        android:background="@drawable/btn_red_selector"
+        >
+    </Button>
+
+</RelativeLayout>

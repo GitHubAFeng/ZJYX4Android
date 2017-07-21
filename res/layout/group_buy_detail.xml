@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/register_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_bar_right_btn" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/food_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_img"
+                    android:layout_width="250.0dp"
+                    android:layout_height="250.0dp"
+                    android:background="@drawable/icon" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dp"
+                    android:text="蛋糕"
+                    android:textColor="#ff0000"
+                    android:textSize="18.0dp" />
+
+                <TextView
+                    android:id="@+id/tv_poit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dp"
+                    android:text="公益积分：10"
+                    android:textColor="#000000"
+                    android:textSize="14.0dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="#dfdfdf" />
+
+            <LinearLayout
+                android:id="@+id/lv_attr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_sub_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="合計：￥0.00"
+                    android:textColor="#833302" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#f9fcdc"
+                android:orientation="vertical"
+                 >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="2.0dip"
+                    android:background="@drawable/hj_dashed_pur" 
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_pro_rev"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30.0dp"
+                    android:layout_marginRight="10.0dp"
+                    android:background="@drawable/arrow_gray_right"
+                    android:paddingLeft="15.0dp"
+                    android:paddingTop="6.0dp"
+                    android:text="用户评论"
+                    android:textColor="#853100"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="2.0dip"
+                    android:background="@drawable/hj_dashed_pur" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f4e8c4"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_pro_des"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dp"
+                        android:layout_marginRight="10.0dp"
+                        android:gravity="center"
+                        android:paddingLeft="15.0dp"
+                        android:paddingTop="6.0dp"
+                        android:text="产品描述"
+                        android:textColor="#853100"
+                        android:textSize="16.0dp" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="2.0dip"
+                        android:background="@drawable/hj_dashed_pur" />
+
+                    <TextView
+                        android:id="@+id/tv_pro_des_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15.0dp"
+                        android:paddingTop="6.0dp"
+                        android:textColor="#853100" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="2.0dip"
+                        android:background="@drawable/hj_dashed_pur" />
+
+                    <TextView
+                        android:id="@+id/tv_pro_notice"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dp"
+                        android:layout_marginRight="10.0dp"
+                        android:gravity="center"
+                        android:paddingLeft="15.0dp"
+                        android:paddingTop="6.0dp"
+                        android:text="温馨提示"
+                        android:textColor="#853100"
+                        android:textSize="16.0dp" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="2.0dip"
+                        android:background="@drawable/hj_dashed_pur" />
+
+                    <TextView
+                        android:id="@+id/tv_pro_notice_content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15.0dp"
+                        android:paddingTop="6.0dp"
+                        android:textColor="#853100" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/more_about_title_bar"
+        layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/more_bg"
+        android:orientation="vertical" >
+        
+
+        <TextView
+            android:id="@+id/show_news_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/more_feed_back_padding"
+            android:gravity="center_horizontal"
+            android:paddingLeft="@dimen/more_feed_back_padding"
+            android:paddingRight="@dimen/more_feed_back_padding"
+            android:text="@string/public_get_data_notice"
+            android:textColor="@color/black"
+            android:textSize="@dimen/content_title_size" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="2.0dip"
+            android:background="@drawable/hj_dashed_gray" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dp"
+            android:layout_marginTop="5.0dp"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dp"
+                android:text="星级："
+                android:textColor="#000000" />
+
+            <RatingBar
+                android:id="@+id/shopdetai_RatingBar02"
+                style="@style/my_ratingbar_small"
+                android:numStars="5"
+            	android:rating="5.0"
+            	android:stepSize="1.0"
+                android:layout_width="wrap_content"
+                android:layout_height="30.0dp"
+                android:isIndicator="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dp"
+            android:layout_marginTop="5.0dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/com_0"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_server"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/date_bg_sel"
+                android:paddingLeft="3.0dp"
+                android:text="@string/com_default" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/com_1"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_taste"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/date_bg_sel"
+                android:paddingLeft="3.0dp"
+                android:text="@string/com_default" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/com_2"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tv_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/date_bg_sel"
+                android:paddingLeft="3.0dp"
+                android:text="@string/com_default" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dp"
+            android:layout_marginTop="5.0dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/com_info"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/et_dis"
+                android:layout_width="260.0dp"
+                android:layout_height="100.0dp"
+                android:background="@drawable/selector_bg_inputname"
+                android:hint="@string/com_notice"
+                android:paddingTop="2.0dp" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dp"
+            android:layout_marginTop="5.0dp"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="图片："
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/iv_image"
+                android:layout_width="100.0dp"
+                android:layout_height="100.0dp"
+                android:src="@drawable/icon"
+                android:paddingTop="2.0dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="100.0dp"
+            android:layout_height="40.0dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5.0dp"
+            android:layout_marginRight="5.0dp"
+            android:layout_marginTop="5.0dp"
+            android:background="@drawable/btn_red_selector"
+            android:text="@string/public_add"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>

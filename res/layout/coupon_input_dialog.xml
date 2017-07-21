@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    <include
+        android:id="@+id/more_check_update_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/title_bar_right_textview" />
+    <LinearLayout 
+        android:id="@+id/ll_first"
+        android:layout_below="@+id/more_check_update_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20.0dp"
+        android:visibility="gone">
+        <TextView 
+            android:id="@+id/tv_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="利润："
+            android:textColor="#000000"/>
+        <EditText 
+            android:id="@+id/et_first"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入利润"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/ll_second"
+        android:layout_below="@+id/ll_first"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        >
+        <TextView 
+            android:id="@+id/tv_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="券号："
+            android:textColor="#000000"/>
+        <EditText 
+            android:id="@+id/et_second"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入券号"/>
+    </LinearLayout>
+
+</RelativeLayout>

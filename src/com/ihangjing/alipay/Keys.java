@@ -1,0 +1,30 @@
+﻿/*
+ * Copyright (C) 2010 The MobileSecurePay Project
+ * All right reserved.
+ * author: shiqun.shi@alipay.com
+ */
+
+package com.ihangjing.alipay;
+
+//
+// 请参考 Android平台安全支付服务(msp)应用开发接口(4.2 RSA算法签名)部分，并使用压缩包中的openssl RSA密钥生成工具，生成一套RSA公私钥。
+// 这里签名时，只需要使用生成的RSA私钥。
+// Note: 为安全起见，使用RSA私钥进行签名的操作过程，应该尽量放到商家服务器端去进行。
+public final class Keys {
+
+    // 合作商户ID，用签约支付宝账号登录www.alipay.com后，在商家服务页面中获取。
+	public static final String DEFAULT_PARTNER = "2088621140443537";//2088202932971924 伊天园
+
+    // 商户收款的支付宝账号
+	public static final String DEFAULT_SELLER = "3264800747@qq.com";//3713606@qq.com 伊天园
+
+    // 商户（RSA）私钥
+	public static final String PRIVATE = "MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBAJ3VyDSSO+nnYb8iLdV7m4dhhYkmwtCbD1izIKlfttovxJmnBqNo8F0Yend/sOkC0vPM3ZgjjvHZ+hRtgNe/N+7chAeqfbTQyPw/dCY7Rh+TwfMTsiqP9QCEYKECrpkrsdQoqIkcTmSK5oqxQdqWNxAFeSgmwXI9zNO5Whg4hU7LAgMBAAECgYAKY7osC7w552s9w6g0t1BDlx3NK2oDhVF7Sz9JJu3IawCMBLyhIRVBa40UNKmWjQMJ3WBw1VZhgTG/Cn5CtWmfCxorRlcN3OvxCHOPZbQrT4bdj264+1tLGeS3/V1bMMWmqubeQG28Z247XW8a7SwFxEQm4uZc1E/0FcpAEOTz8QJBAMoR6kzhVtrOZ1HB0Gsuo8GUOHmou5+Osp86SuuMZyvGcdqvTdVgygZe2903+gTCjjIvz81PC6R0zzGs+3lqRdUCQQDH9ZfvdACtWzFUcPMcqxDJYrdCya0BeUQ2GjzOTQHOf0v1lP6Ni6PxcY+EBKI+M6Z7OnD5Ht0fpZzvRFLMVnIfAkEAgndyudS8SWX+25CxyqJAZNoYZKSHD4wI1DnE6bSrYF4uYK3TKTPm/Jn+hyR/LteXC9xG5R5mO/aXWFGBxHDTSQJAIcmsDLgrTR+1rDERw2xcf8sAcHanlzIohoPUdn+oqH32Fd9BTCWmZCvuNj6aM6yCmxv67v16G9jeNcfzvbd1vQJBAIu4UKFhQm8uu7RlZ9TSD3t/xk46w1mCTcaNC7kf7rBYyxb56YfsXFhMwp3fre25Q9/v3qv20apqtcW6q4Un6XM=";
+	//MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAKapG/rH5vd3oYoIwGghcb3Rb24CusR8FsqregKbBgRiUJcw9AuT4ptnhJ+0N1XDGAQG8+TuOBL8RtpJ950pH7TobyPphhfZfOfffdY6iw3NYrpEJ5gWo3N0fWK55F8YJqZOJfSsCosW373j5gJpuofTWYHLmCHL9ScuuRTp4OqvAgMBAAECgYAc3EoZGob3scLKmYtgPPJqcZs/TL+1CNwViq5dRyU6mx/jnrmUS67BRKLl2RqAAoHlKKMRsOMK/p7ybD6x+44eyTHH4XxOqF854NCG5Jw2Eq6BscSsl3NEZIfoH/qtevenC+lT1F8moiMyhjUpYEZqysmNNLlaSzDL3p1DfQAhcQJBANz30Btryta4vNY9hZtzJbE+hq0DMYLlO3C6L+mbM2TqnFdH+awWBnAx/uUuKsbT7zueBOwDmnDCJRc9wETsxgkCQQDBFS4PpjgQAohgVbppM8WT1q/fodrbHeMGNubA+Vp90QFhQqLJNamu6nRpiGoLWDbkvAG6aobwHm9NwEM/NRj3AkEAoSbKS3VNtVN9xPGRY1GTB7UGG1/c2A2+T/Q5xTE/RjYkVzNSz0Iw59pOf24wHFmse9o+1LG8DMhKrKyIcLwNoQJAelenRfc2kr5oF1J6uWo6iQCBlBwEhs6bKTbkY+Yb9pjWXQBSEVhVWiXo+W2cc+/DaI/QMISLV96Q/B0U/xnv5QJAZ6o0+VcBawFXFQPsDdtV/orLTYugWlsSH2wc0iq5G7nUkellWaqRSNZK6MtSMLIUCCFH84uc3sBRLEuDR2ej6w== 伊天园
+    // 支付宝（RSA）公钥
+	public static final String PUBLIC = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCedy37bnjfmCyUmx4UX+I/I8GOS8m57QEvKdG6RyyXH91xCe+hoS9U1Hb5kwRRvjeuXuc45u6/Rm6DUex5fTzcR7x9kAExOqeE+QWd8wRjhU2AvCelCvlxP9phRVN0fo3RPLxitA4opTW66UWD1Q0tuQp09/XqysKuz5Xl89BHzwIDAQAB";
+	//MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCmqRv6x+b3d6GKCMBoIXG90W9uArrEfBbKq3oCmwYEYlCXMPQLk+KbZ4SftDdVwxgEBvPk7jgS/EbaSfedKR+06G8j6YYX2Xzn333WOosNzWK6RCeYFqNzdH1iueRfGCamTiX0rAqLFt+94+YCabqH01mBy5ghy/UnLrkU6eDqrwIDAQAB 伊天园
+   
+
+
+}

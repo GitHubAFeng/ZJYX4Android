@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/userinfo_title_bar"
+        layout="@layout/title_bar" />
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50.0dp"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="32.0dp"
+        android:layout_marginLeft="10.0dp"
+        android:layout_marginRight="10.0dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/iv_name"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/userinfo_name_tv"
+                android:layout_width="70.0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/user_true_name"
+                android:gravity="right"
+                android:textColor="@color/deep_black"
+                android:textSize="@dimen/content_title_size" />
+
+            <EditText
+                android:id="@+id/userinfo_truename_et"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="left"
+                android:hint="@string/user_true_name_notice"
+                android:textColor="#888888"
+                android:textSize="12.0dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_name"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/background_gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/simple_margin"
+        android:layout_marginTop="@dimen/simple_padding"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/userinfo_username_tv"
+            android:layout_width="60.0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:focusable="false"
+            android:gravity="right"
+            android:text="会员名"
+            android:textColor="@color/deep_black"
+            android:textSize="@dimen/content_title_size" />
+
+        <EditText
+            android:id="@+id/userinfo_username_et"
+            style="@style/write_order_edit_sytle"
+            android:layout_toRightOf="@id/userinfo_username_tv" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="32.0dp"
+        android:layout_marginLeft="10.0dp"
+        android:layout_marginRight="10.0dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/iv_phone"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/userinfo_phone_tv"
+                android:layout_width="70.0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/user_phone"
+                android:gravity="right"
+                android:textColor="@color/deep_black"
+                android:textSize="@dimen/content_title_size" />
+
+            <EditText
+                android:id="@+id/userinfo_phone_et"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="left"
+                android:hint="@string/user_phone_notice"
+                android:inputType="phone"
+                android:textColor="#888888"
+                android:textSize="12.0dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/background_gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="32.0dp"
+        android:layout_marginLeft="10.0dp"
+        android:layout_marginRight="10.0dp"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/iv_email"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/userinfo_email_tv"
+                android:layout_width="70.0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/user_email"
+                android:gravity="right"
+                android:textColor="@color/deep_black"
+                android:textSize="@dimen/content_title_size" />
+
+            <EditText
+                android:id="@+id/userinfo_email_et"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="left"
+                android:hint="@string/user_email_notice"
+                android:textColor="#888888"
+                android:textSize="12.0dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_email"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/background_gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="32.0dp"
+        android:layout_marginLeft="10.0dp"
+        android:layout_marginRight="10.0dp" 
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/iv_qq"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/userinfo_QQ_tv"
+                android:layout_width="70.0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/user_qq"
+                android:gravity="right"
+                android:textColor="@color/deep_black"
+                android:textSize="@dimen/content_title_size" />
+
+            <EditText
+                android:id="@+id/userinfo_qq_et"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="left"
+                android:hint="@string/user_qq_notice"
+                android:inputType="number"
+                android:textColor="#888888"
+                android:textSize="12.0dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_qq"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/background_gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/simple_margin"
+        android:layout_marginTop="@dimen/simple_margin"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/userinfo_point_tv"
+            android:layout_width="@dimen/add_new_address_text_width"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="积分"
+            android:textColor="@color/deep_black"
+            android:textSize="@dimen/content_title_size" />
+
+        <EditText
+            android:id="@+id/userinfo_point_et"
+            style="@style/write_order_edit_sytle"
+            android:layout_toRightOf="@id/userinfo_point_tv"
+            android:focusable="false"
+            android:maxLines="3" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/userinfo_save_button"
+        style="@style/red_button_sytle"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/simple_margin"
+        android:text="@string/user_save" />
+
+</LinearLayout>

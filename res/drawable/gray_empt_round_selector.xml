@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/selector_address">
+
+    <item android:drawable="@drawable/gray_empt_round_rect_shape" android:state_checked="false"/>
+    <item android:drawable="@drawable/gray_empt_rect_shape_press" android:state_checked="true"/>
+
+</selector>

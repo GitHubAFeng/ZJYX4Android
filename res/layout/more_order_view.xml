@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_bg_list"
+    android:gravity="center" >
+
+    <ProgressBar
+        android:id="@+id/more_order_ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/more_order_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_more"
+        android:drawablePadding="4.0dip"
+        android:gravity="center"
+        android:paddingBottom="15.0dip"
+        android:paddingTop="15.0dip"
+        android:text="查看更多订单"
+        android:textColor="#ff888888"
+        android:textSize="16.0sp" />
+
+</LinearLayout>

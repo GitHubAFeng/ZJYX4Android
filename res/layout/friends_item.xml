@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60.0dp"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+    
+  <LinearLayout
+      android:id="@+id/ll_icon"
+      android:layout_width="50.0dp"
+      android:layout_height="50.0dp"
+      android:layout_marginLeft="5.0dp"
+      android:layout_marginTop="5.0dp"
+      android:orientation="horizontal"
+      android:layout_centerVertical="true"
+      android:layout_alignParentLeft="true"
+      android:gravity="center"
+      android:background="@drawable/index_food_img">
+      <RelativeLayout 
+          android:id="@+id/rl_icon"
+          android:layout_width="43.0dp"
+          android:layout_height="43.0dp"
+          android:background="@drawable/friend_default"
+          >
+          
+      </RelativeLayout>
+  </LinearLayout>
+  <TextView 
+      android:id="@+id/tv_name"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:layout_toLeftOf="@+id/btn_opt"
+      android:layout_toRightOf="@+id/ll_icon"
+      android:layout_marginLeft="10.0dp"
+      android:layout_marginTop="20.0dp"
+      android:textColor="#755931"/>
+  
+  <Button 
+      android:id="@+id/btn_opt"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="加为好友"
+	  android:layout_alignParentRight="true"
+	  android:layout_centerVertical="true"
+	  android:visibility="gone"
+      android:textColor="#ffffff"
+      android:background="#833300"/>
+</RelativeLayout>

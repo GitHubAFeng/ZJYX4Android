@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/register_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/title_bar_right_textview" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout09"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/register_title_bar"
+        android:background="@drawable/index_search_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:paddingBottom="2.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip" > <!-- focusable， focusableInTouchMode两个配置可以防止一进入界面就弹出输出框 -->
+
+        <EditText
+            android:id="@+id/main_et_search"
+            android:layout_width="wrap_content"
+            android:layout_height="32.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/s_input_search"
+            android:hint="请输入好友名称或手机号码"
+            android:singleLine="true"
+            android:textColor="#ff888888"
+            android:textSize="16.0sp" />
+
+        <Button
+            android:id="@+id/searchshop_btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dp"
+            android:background="#833300"
+            android:paddingBottom="5.0dp"
+            android:paddingLeft="5.0dp"
+            android:paddingRight="5.0dp"
+            android:paddingTop="5.0dp"
+            android:text="取消"
+            android:textColor="#ffffff"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_below="@+id/LinearLayout09" >
+
+        <ListView
+            android:id="@+id/lv_del"
+            style="@style/list_style"
+            android:layout_width="80.0dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:divider="#dfdfdf"
+            android:dividerHeight="1.0dip"
+            android:listSelector="#00000000" >
+        </ListView>
+
+        <ListView
+            android:id="@+id/lv_data"
+            style="@style/list_style"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff"
+            android:divider="#dfdfdf"
+            android:dividerHeight="1.0dip"
+            android:listSelector="#00000000" >
+        </ListView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_point_top"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dp"
+            android:gravity="center"
+            android:background="@drawable/point_top"
+            android:layout_weight="1.0"
+            android:textColor="#ffffff" />
+        
+        <Button
+            android:id="@+id/btn_public_point_top"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dp"
+            android:gravity="center"
+            android:background="@drawable/public_top"
+            android:textColor="#ffffff"
+            android:layout_weight="1.0" />
+        <Button
+            android:id="@+id/btn_view_friends_buy"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dp"
+            android:background="@drawable/friend_buy"
+            android:gravity="center"
+            android:textColor="#ffffff" 
+            android:layout_weight="1.0"/>
+        <Button
+            android:id="@+id/btn_view_friends_not"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dp"
+            android:background="#833300"
+            android:gravity="center"
+            android:text="好友购买"
+            android:textColor="#ffffff" 
+            android:layout_weight="1.0"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_all"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/register_title_bar"
+        layout="@layout/title_bar_right_btn" />
+
+    <RadioGroup
+        android:id="@+id/rg_opt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal" 
+        android:layout_below="@+id/register_title_bar">
+
+        <RadioButton
+            android:id="@+id/rb_unre"
+            android:layout_width="fill_parent"
+            android:layout_height="32.0dp"
+            android:textSize="14.0dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/rb_tab_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="商品列表"
+            android:textColor="#000000" />
+        <RadioButton
+            android:id="@+id/rb_yd"
+            android:layout_width="fill_parent"
+            android:layout_height="32.0dp"
+            android:textSize="14.0dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/rb_tab_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="订座"
+            android:textColor="#000000" 
+            android:visibility="gone"/>
+
+        <RadioButton
+            android:id="@+id/rb_re"
+            android:layout_width="fill_parent"
+            android:layout_height="32.0dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/rb_tab_selector"
+            android:button="@null"
+            android:textSize="14.0dp"
+            android:gravity="center"
+            android:text="商家信息@评论"
+            android:textColor="#000000" />
+
+        
+    </RadioGroup>
+
+    <!-- 商家 图片区域 -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vs_select"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rg_opt"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</RelativeLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1.5dp"
+    android:layout_marginLeft="3.0dp"
+    android:layout_marginRight="3.0dp"
+    android:background="#ffffff"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <!-- 商家图片信息 -->
+
+    <LinearLayout
+        android:id="@+id/LinearLayout011"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/itemImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/nopic_shop"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+    <!-- 商家文字信息 -->
+
+    <LinearLayout
+        android:id="@+id/LinearLayout012"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 商家名称 -->
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+
+                <RelativeLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_shopname"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/tv_notic"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/itemShopName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:singleLine="true"
+                            android:text="加载中..."
+                            android:textColor="#ff000000"
+                            android:textSize="18.0sp" />
+
+                        <TextView
+                            android:id="@+id/tv_discount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/green_round_rect_shape"
+                            android:text="9折"
+                            android:textColor="#ffffff"
+                            android:textSize="11.0sp" />
+                        <LinearLayout 
+                                    android:id="@+id/ll_icon"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toRightOf="@+id/ll_shopname"
+                                    android:orientation="horizontal"/>
+                    </LinearLayout>
+					
+                    <TextView
+                        android:id="@+id/tv_notic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="状态"
+                        android:textColor="#ff5500" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_send_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/itemTel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推荐理由："
+                android:textColor="#ff0000" >
+            </TextView>
+
+            
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/itemOrderTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:drawableLeft="@drawable/icon_time_big"
+                android:drawablePadding="2.0dip"
+                android:layout_alignParentLeft="true"
+                android:text="加载中..."
+                android:textColor="#ff888888"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/tv_send_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dp"
+                android:layout_weight="1.0"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@drawable/icon_around"
+                android:text="加载中..."
+                android:textColor="#ff888888"
+                android:textSize="14.0sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/itemShopAddress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="2.0dip"
+            android:text="加载中..."
+            android:textColor="#ff888888"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+</LinearLayout>

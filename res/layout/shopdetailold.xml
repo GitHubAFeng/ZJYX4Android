@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_login"
+    android:orientation="vertical" >
+
+    <!-- Header -->
+    <include layout="@layout/normal_header" >
+    </include>
+
+    <RelativeLayout
+        android:id="@+id/shopdetail_div"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/background_login_div_bg"
+        android:padding="15dp" >
+
+        <TextView
+            android:id="@+id/shopdetail_shopname"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:text="店名：" />
+
+        <TextView
+            android:id="@+id/shopdetail_tel"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shopdetail_shopname"
+            android:layout_marginTop="5dp"
+            android:text="电话：" />
+
+        <TextView
+            android:id="@+id/shopdetail_address"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shopdetail_tel"
+            android:layout_marginTop="5dp"
+            android:text="地址：" />
+
+        <TextView
+            android:id="@+id/shopdetail_distance"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shopdetail_address"
+            android:layout_marginTop="5dp"
+            android:text="距离：" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/shopdesc_div"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shopdetail_div"
+        android:layout_margin="15dp"
+        android:background="@drawable/background_login_div_bg"
+        android:padding="15dp" >
+
+        <TextView
+            android:id="@+id/shopdetail_fanwei"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:text="外送范围：" />
+
+        <TextView
+            android:id="@+id/shopdetail_shuoming"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shopdetail_fanwei"
+            android:layout_marginTop="5dp"
+            android:text="说明：" />
+
+        <TextView
+            android:id="@+id/shopdetail_desc"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shopdetail_shuoming"
+            android:layout_marginTop="5dp"
+            android:text="简介：" />
+            <Button
+        android:id="@+id/btGotofoodlist"
+        style="@style/simple_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="去订购" ></Button>
+    </RelativeLayout>
+</LinearLayout>

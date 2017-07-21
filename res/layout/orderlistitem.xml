@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_go_to"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/rl_shop_ico"
+            android:layout_width="30.0dp"
+            android:layout_height="30.0dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5.0dp"
+            android:layout_marginTop="5.0dp"
+            android:background="@drawable/icon" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="40.0dp"
+            android:layout_height="40.0dp"
+            android:background="@drawable/white_round_rect_shape" >
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/orderitem_shopname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_toRightOf="@+id/rl_shop_ico"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="申请取消订单"
+            android:textColor="#ff5500"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="2.0px"
+        android:background="#f0f0f0" />
+
+    <RelativeLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip" >
+
+        <TextView
+            android:id="@+id/orderitem_orderid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:text="@string/order_detail_id"
+            android:textColor="@color/Black"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/orderitem_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="12.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip" >
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:drawablePadding="4.0dip"
+            android:text="@string/order_comtime"
+            android:textColor="@color/Black"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/orderitem_ordertime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textView9"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/orderIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="20.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:textColor="#ff5500"
+            android:textSize="12.0sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="2.0px"
+        android:layout_marginBottom="10.0dp"
+        android:background="#f0f0f0" />
+
+    <LinearLayout
+        android:id="@+id/ll_food_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_opt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="2.0px"
+            android:layout_marginBottom="10.0dp"
+            android:background="#f0f0f0" />
+	<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        >
+        <Button 
+            android:id="@+id/btn_buy_again"
+            android:layout_width="100.0dp"
+            android:layout_height="30.0dp"
+            android:background="#675263"
+            android:textColor="#ffffff"
+            android:layout_marginRight="5.0dp"
+            android:layout_alignParentRight="true"
+            android:layout_toLeftOf="@+id/btn_go_command"
+            android:text="@string/ordercontent_buy_again"/>
+        <Button 
+            android:id="@+id/btn_go_command"
+            android:layout_width="100.0dp"
+            android:layout_height="30.0dp"
+            android:background="@color/topbar_bg_color"
+            android:textColor="#ffffff"
+            android:layout_marginRight="5.0dp"
+            android:layout_alignParentRight="true"
+            android:text="去评价"
+            android:visibility="gone"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="5.0px"
+        android:background="#f0f0f0" />
+
+</LinearLayout>

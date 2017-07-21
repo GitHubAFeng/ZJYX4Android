@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/foodimagelist_linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/index_title_bg"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/foolist_shopname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:shadowColor="#75000000"
+            android:shadowDy="2.0"
+            android:shadowRadius="2.0"
+            android:text="商家名称"
+            android:textColor="#ffffffff"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+    <!-- 菜单列表 -->
+    <RelativeLayout
+        android:id="@+id/foodimagelist_loadingdata_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodimagelist_linearLayout3"
+        android:layout_marginTop="4.0dip" >
+
+        <TextView
+            android:id="@+id/foodlist_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="4.0dip"
+            android:text="数据加载中..."
+            android:textColor="@color/grey"
+            android:textSize="@dimen/content_title_size" />
+
+        <ProgressBar
+            android:id="@+id/foodlist_progress_bar"
+            style="@style/loading_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/foodlist_text" />
+
+        <ImageView
+            android:id="@+id/order_loadingdata_line"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/foodlist_progress_bar"
+            android:layout_marginTop="4.0dip"
+            android:background="@drawable/horizontal_line" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/foodimagelist_loadingdata_ll"
+        android:orientation="vertical"
+        android:paddingBottom="40.0dip" >
+
+        <ListView
+            android:id="@+id/foodimageslist_listView1"
+            style="@style/list_style"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:listSelector="#00000000" />
+    </LinearLayout>
+</RelativeLayout>

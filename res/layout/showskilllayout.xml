@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/search_restaurant_title_bar"
+        
+        layout="@layout/title_bar" />
+
+    
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="fill_parent"
+        android:layout_height="3.0dip"
+        android:background="#22000000" />
+    <!-- 商家详情 评论 -->
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout09"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingBottom="10.0dip" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayout03"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/words_bg"
+                android:orientation="vertical"
+                android:padding="0.0dip" >
+
+                <RelativeLayout
+                    
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15.0dip"
+                    android:paddingRight="15.0dip"
+                    android:paddingTop="10.0dip" >
+
+                    <TextView
+                        android:id="@+id/foodnametv"
+                        style="@style/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/tv_gift_type"
+                        android:text="@string/loading" />
+
+                    <TextView
+                        android:id="@+id/tv_gift_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="#ff5500" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout12"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginRight="2.0dip"
+                    android:background="@drawable/selector_bg_list"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/shopdetail_info_padding" >
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gift_list_req_point"
+                        android:textColor="#ff000000"
+                        android:textSize="14.0sp" />
+
+                    <TextView
+                        android:id="@+id/oldpricetv"
+                        style="@style/text_content_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5.0dip"
+                        android:paddingRight="5.0dip"
+                        android:text="@string/loading" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout13"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginRight="2.0dip"
+                    android:background="@drawable/selector_bg_list"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/shopdetail_info_padding"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="抽奖积分："
+                        android:textColor="#ff000000"
+                        android:textSize="14.0sp" />
+
+                    <TextView
+                        android:id="@+id/newpricetv"
+                        style="@style/text_content_style"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5.0dip"
+                        android:paddingRight="5.0dip"
+                        android:text="@string/loading" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout_x1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginRight="2.0dip"
+                    android:background="@drawable/selector_bg_list"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/shopdetail_info_padding" >
+
+                    <TextView
+                        
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gift_detail_price"
+                        android:textColor="#ff000000"
+                        android:textSize="14.0sp" />
+
+                    <TextView
+                        android:id="@+id/sendfreetv"
+                        style="@style/text_content_style"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5.0dip"
+                        android:paddingRight="5.0dip"
+                        android:text="@string/loading" />
+                </LinearLayout>
+
+                <LinearLayout
+                    
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginRight="2.0dip"
+                    android:background="@drawable/selector_bg_list"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/shopdetail_info_padding" >
+
+                    <TextView
+                        
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gift_list_count"
+                        android:textColor="#ff000000"
+                        android:textSize="14.0sp" />
+
+                    <TextView
+                        android:id="@+id/cnumtv"
+                        style="@style/text_content_style"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5.0dip"
+                        android:paddingRight="5.0dip"
+                        android:text="@string/loading" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/shopdetail_linearLayout6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2.0dip"
+                    android:layout_marginRight="2.0dip"
+                    android:background="@drawable/selector_bg_list"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/shopdetail_info_padding"
+                    >
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="面额："
+                        android:textColor="#ff000000"
+                        android:textSize="14.0sp" />
+
+                    <TextView
+                        android:id="@+id/shopnametv"
+                        style="@style/text_content_style"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5.0dip"
+                        android:paddingRight="5.0dip"
+                        android:text="@string/loading" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_hint"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0.0dip"
+                    android:background="@drawable/step_bg"
+                    android:gravity="center"
+                    android:paddingBottom="5.0dip"
+                    android:paddingTop="5.0dip" >
+
+                    <Button
+                        android:id="@+id/shopdetail_btn_order"
+                        android:layout_width="80.0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/red_btn_selector"
+                        android:text="@string/gift_detail_buy"
+                        android:textColor="#ffffffff"
+                        android:textSize="18.0sp" />
+
+                    <Button
+                        android:id="@+id/shopdetail_btn_lotter"
+                        android:layout_width="80.0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:background="@drawable/red_btn_selector"
+                        android:text="@string/gift_detail_go"
+                        android:textColor="#ffffffff"
+                        android:textSize="18.0sp" 
+                        android:visibility="gone"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!-- 底部按钮 三个按钮 根据情况显示 -->
+
+</LinearLayout>

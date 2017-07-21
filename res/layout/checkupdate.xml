@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+    <include
+        android:id="@+id/more_check_update_title_bar"
+        layout="@layout/title_bar" />
+
+    <ImageView
+        android:id="@+id/more_check_update_title_bar_line_iv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/more_check_update_title_bar"
+        android:background="@drawable/second_level_title_line" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/more_check_update_title_bar_line_iv" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+          <!--  <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/more_feed_back_padding"
+                android:scaleType="fitXY"
+                android:src="@drawable/more_logo" /> --> 
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/more_feed_back_padding"
+                android:padding="@dimen/more_feed_back_small_padding"
+                android:scaleType="fitXY"
+                android:src="@drawable/horizontal_line" />
+
+            <TextView
+                android:id="@+id/more_check_update_version_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/more_feed_back_padding"
+                android:text="@string/version_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/content_title_size" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/more_feed_back_small_padding"
+                android:scaleType="fitXY"
+                android:src="@drawable/horizontal_line" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/more_feed_back_padding"
+                android:text="@string/check_copyright"
+                android:textColor="@color/black"
+                android:textSize="@dimen/content_title_size" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/more_feed_back_small_padding"
+                android:scaleType="fitXY"
+                android:src="@drawable/horizontal_line" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="150.0dip"
+                android:layout_marginTop="@dimen/more_feed_back_margin"
+                android:gravity="center_horizontal" >
+
+                <Button
+                    android:id="@+id/check_update_btn"
+                    style="@style/red_button_sytle"
+                    android:text="@string/check_btn"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/content_title_size" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

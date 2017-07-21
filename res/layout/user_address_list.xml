@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:HJAndroid="http://schemas.android.com/apk/res/com.ihangjing.ZJYXForAndroid"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+    <include
+        android:id="@+id/search_restaurant_title_bar"
+        layout="@layout/title_bar_with_nor_button" />
+
+    <ImageView
+        android:id="@+id/search_choose_title_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_restaurant_title_bar"
+        android:background="@drawable/second_level_title_line" />
+
+    <com.ihangjing.HJControls.HJListView
+        android:layout_below="@+id/search_choose_title_line"
+        android:id="@+id/shoptype_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:cacheColorHint="@color/white"
+        android:divider="@drawable/horizontal_line" />
+
+</RelativeLayout>

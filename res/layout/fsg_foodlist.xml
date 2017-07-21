@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/foodlist_linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/index_title_bg"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/foolist_shopname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:shadowColor="#75000000"
+            android:shadowDy="2.0"
+            android:shadowRadius="2.0"
+            android:text="商家名称"
+            android:textColor="#ffffffff"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/foodlist_linearLayout3"
+        android:background="@drawable/catalog_bg"
+        android:gravity="center_vertical"
+        android:minWidth="40.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="5.0dip" >
+
+        <Button
+            android:id="@+id/foodlist_type_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4.0dip"
+            android:layout_marginTop="4.0dip"
+            android:background="@drawable/selector_bg_input"
+            android:gravity="left|center"
+            android:minWidth="140.0dip"
+            android:paddingBottom="5.0dip"
+            android:paddingLeft="14.0dip"
+            android:paddingRight="30.0dip"
+            android:paddingTop="4.0dip"
+            android:shadowColor="#00000000"
+            android:singleLine="true"
+            android:text="分类"
+            android:textColor="#ffffffff"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/foodlist_TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:id="@+id/foodlist_TextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:gravity="right|center"
+            android:paddingRight="14.0dip"
+            android:singleLine="true"
+            android:text="@string/order_condition"
+            android:textColor="#ff000000"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+
+
+    <!-- 菜单列表 -->
+
+    <RelativeLayout
+        android:id="@+id/foodlist_loadingdata_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout1"
+        android:layout_marginTop="4.0dip" >
+
+        <TextView
+            android:id="@+id/foodlist_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="4.0dip"
+            android:text="数据加载中..."
+            android:textColor="@color/grey"
+            android:textSize="@dimen/content_title_size" />
+
+        <ProgressBar
+            android:id="@+id/foodlist_progress_bar"
+            style="@style/loading_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/foodlist_text" />
+
+        <ImageView
+            android:id="@+id/order_loadingdata_line"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/foodlist_progress_bar"
+            android:layout_marginTop="4.0dip"
+            android:background="@drawable/horizontal_line" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/foodlist_loadingdata_ll"
+        android:orientation="vertical"
+        android:paddingBottom="40.0dip" >
+
+        <ListView
+            android:id="@+id/foodlist_listView1"
+            style="@style/list_style"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:listSelector="#00000000" />
+
+        <!-- 菜品列表会出现在这里 -->
+    </LinearLayout>
+    <!-- 页脚 -->
+
+    <LinearLayout
+        android:id="@+id/frameLayout1"
+        style="@style/step_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom" >
+
+        <Button
+            android:id="@+id/foodlist_return"
+            style="@style/left_step"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="@string/order_return" />
+
+        <TextView
+            android:id="@+id/TextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#00000000"
+            android:textSize="0.0sp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            style="@style/step_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/step_1" />
+
+        <Button
+            android:id="@+id/foodlist_next"
+            style="@style/right_step"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:shadowColor="#00000000"
+            android:text="@string/order_next"
+            android:textColor="#ffffffff"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/foodlist_typelist_LinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/errortext"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/foodlist_typelist_LinearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70.0dip"
+            android:background="@drawable/dropdownlist_bg"
+            android:orientation="vertical"
+            android:padding="18.0dip" >
+
+            <ListView
+                android:id="@+id/foodlist_typelist_listView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="14.0dip"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginTop="15.0dip"
+                android:cacheColorHint="#00000000"
+                android:divider="#ffdddddd"
+                android:dividerHeight="1.0px"
+                android:listSelector="#00000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

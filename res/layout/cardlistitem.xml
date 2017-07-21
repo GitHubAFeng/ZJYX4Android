@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:background="@drawable/selector_bg_map" android:orientation="vertical">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_marginBottom="5.0dip"
+		android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip"
+		android:background="@drawable/words_bg">
+
+		<LinearLayout android:id="@+id/linearLayout8"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginBottom="10.0dip" android:layout_marginLeft="10.0dip"
+			android:layout_marginRight="10.0dip" android:layout_marginTop="10.0dip"
+			android:layout_weight="1.0" android:orientation="vertical">
+
+
+
+			<LinearLayout android:id="@+id/linearLayout4"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_marginBottom="5.0dip">
+
+				<LinearLayout android:id="@+id/linearLayout11"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_weight="1.0">
+
+					<TextView android:id="@+id/orderitem_orderid"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical" android:text="礼品卡卡号 :"
+						android:textColor="@color/Black" android:textSize="14.0sp" />
+
+					<TextView android:id="@+id/cardlist_cardnum"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:text="TextView" android:textColor="#ff888888"
+						android:textSize="14.0sp" />
+				</LinearLayout>
+
+
+			</LinearLayout>
+
+
+
+			<LinearLayout android:id="@+id/linearLayout6"
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:drawablePadding="4.0dip"
+					android:text="面值(元) ：" android:textColor="@color/Black"
+					android:textSize="14.0sp" />
+
+				<TextView android:id="@+id/cardlist_point"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:text="TextView" android:textColor="#ff888888"
+					android:textSize="14.0sp" />
+			</LinearLayout>
+
+			<LinearLayout android:id="@+id/linearLayout5"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_marginBottom="8.0dip">
+
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:drawablePadding="4.0dip"
+					android:text="余额(元) " android:textColor="@color/Black"
+					android:textSize="14.0sp" />
+
+				<TextView android:id="@+id/cardlist_cmoney"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="TextView" android:textColor="#ff888888"
+					android:textSize="14.0sp" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

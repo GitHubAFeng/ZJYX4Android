@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+    <include
+        android:id="@+id/more_about_title_bar"
+        layout="@layout/title_bar" />
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/more_about_title_bar"
+        android:layout_marginBottom="@dimen/write_order_scrollview_mb" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+<!-- 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/more_feed_back_padding"
+                android:layout_marginTop="@dimen/more_feed_back_padding"
+                android:scaleType="fitXY"
+                android:src="@drawable/more_logo" />
+ -->
+             <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/more_feed_back_padding"
+                android:gravity="center_horizontal"
+                android:paddingLeft="@dimen/more_feed_back_padding"
+                android:paddingRight="@dimen/more_feed_back_padding"
+                android:text="@string/about_introduce"
+                android:textColor="@color/black"
+                android:textSize="@dimen/content_title_size" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/more_feed_back_padding"
+                android:paddingRight="@dimen/more_feed_back_padding"
+                android:text="@string/about_msg"
+                android:textColor="@color/black"
+                android:textSize="@dimen/content_title_size" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/more_feed_back_padding"
+                android:background="@drawable/horizontal_line"
+                android:paddingLeft="@dimen/more_feed_back_small_padding"
+                android:paddingRight="@dimen/more_feed_back_small_padding"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/more_feed_back_padding"
+                android:text="@string/about_label_main"
+                android:textColor="@color/black"
+                android:textSize="@dimen/content_title_size" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/horizontal_line"
+                android:paddingLeft="@dimen/more_feed_back_small_padding"
+                android:paddingRight="@dimen/more_feed_back_small_padding"
+                android:scaleType="fitXY" />
+
+           
+           
+           
+
+
+          
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

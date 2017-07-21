@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/userinfo_title_bar"
+        layout="@layout/title_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background_gray"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/user_center_index_userinfo_rl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ll_back"
+                android:layout_marginTop="10.0dp"
+                android:layout_marginLeft="10.0dp"
+            	android:layout_marginRight="10.0dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30.0dp"
+                    android:layout_marginLeft="4.0dp"
+                    android:layout_marginRight="5.0dp"
+                    android:layout_marginTop="5.0dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_user_name"
+                        android:drawablePadding="5.0dp"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/user_center_name"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tv_username"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5.0dp"
+                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:gravity="right"
+                        android:text="@string/user_center_get"
+                        android:textColor="#888888" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="2.0dp"
+                    android:background="@color/background_gray" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="30.0dp"
+                    android:layout_marginLeft="4.0dp"
+                    android:layout_marginRight="5.0dp"
+                    android:layout_marginTop="5.0dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/icon_user_phone"
+                        android:drawablePadding="5.0dp"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/user_center_phone"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tv_phone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5.0dp"
+                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:gravity="right"
+                        android:text="@string/user_center_get"
+                        android:textColor="#888888" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="80.0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/user_center_email"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tv_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/user_center_get"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dp"
+                android:background="@drawable/ll_back"
+                android:layout_marginLeft="10.0dp"
+            	android:layout_marginRight="10.0dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_orderlist"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3.0dp"
+                    android:layout_marginLeft="4.0dp"
+                    android:layout_marginRight="5.0dp"
+                    android:layout_marginTop="3.0dp"
+                    android:drawableLeft="@drawable/icon_user_order"
+                    android:drawablePadding="5.0dp"
+                    android:drawableRight="@drawable/ic_arrow_right"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/user_center_order"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="2.0dip"
+                    android:background="@color/background_gray" />
+
+                <TextView
+                    android:id="@+id/tv_giftlist"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3.0dp"
+                    android:layout_marginLeft="4.0dp"
+                    android:layout_marginRight="5.0dp"
+                    android:layout_marginTop="3.0dp"
+                    android:drawableLeft="@drawable/icon_user_gift"
+                    android:drawablePadding="5.0dp"
+                    android:drawableRight="@drawable/ic_arrow_right"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/user_center_point_order"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="2.0dip"
+                    android:background="@color/background_gray" />
+
+                <LinearLayout
+                    android:id="@+id/ll_point"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_n_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3.0dp"
+                        android:layout_marginLeft="4.0dp"
+                        android:layout_marginTop="3.0dp"
+                        android:drawableLeft="@drawable/icon_user_point"
+                        android:drawablePadding="5.0dp"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/user_center_point"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tv_n_point_1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dp"
+                        android:drawablePadding="5.0dp"
+                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:gravity="right"
+                        android:text="@string/user_center_get"
+                        android:textColor="#888888" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dp"
+                android:background="@drawable/ll_back"
+                android:layout_marginLeft="10.0dp"
+            	android:layout_marginRight="10.0dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3.0dp"
+                    android:layout_marginLeft="4.0dp"
+                    android:layout_marginRight="5.0dp"
+                    android:layout_marginTop="3.0dp"
+                    android:drawableLeft="@drawable/icon_user_password"
+                    android:drawablePadding="5.0dp"
+                    android:drawableRight="@drawable/ic_arrow_right"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/user_center_login_password"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="2.0dip"
+                    android:background="@color/background_gray" />
+
+                <LinearLayout
+                    android:id="@+id/ll_pay_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_pay_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3.0dp"
+                        android:layout_marginLeft="4.0dp"
+                        android:layout_marginRight="5.0dp"
+                        android:layout_marginTop="3.0dp"
+                        android:drawableLeft="@drawable/icon_user_password"
+                        android:drawablePadding="5.0dp"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/user_center_pay_password"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tv_have_money"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5.0dp"
+                        android:drawablePadding="5.0dp"
+                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:gravity="right"
+                        android:text="@string/user_center_get"
+                        android:textColor="#888888" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="2.0dip"
+                    android:background="@color/background_gray" />
+
+                <TextView
+                    android:id="@+id/tv_myfriends"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3.0dp"
+                    android:layout_marginLeft="4.0dp"
+                    android:layout_marginRight="5.0dp"
+                    android:layout_marginTop="3.0dp"
+                    android:drawableLeft="@drawable/icon_user_shop"
+                    android:drawablePadding="5.0dp"
+                    android:drawableRight="@drawable/ic_arrow_right"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/user_center_shop"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="2.0dip"
+                    android:background="@color/background_gray"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_mycoupons"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10.0dp"
+                    android:layout_marginTop="10.0dp"
+                    android:background="@drawable/list_ico"
+                    android:paddingLeft="20.0dp"
+                    android:text="@string/user_center_coupon"
+                    android:textColor="#000000"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="2.0dip"
+                    android:background="@color/background_gray"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_mymessage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10.0dp"
+                    android:layout_marginTop="10.0dp"
+                    android:background="@drawable/list_ico"
+                    android:paddingLeft="20.0dp"
+                    android:text="花马巴黎互动"
+                    android:textColor="#000000"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="2.0dip"
+                    android:background="@color/background_gray" />
+
+                <TextView
+                    android:id="@+id/tv_myaddress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3.0dp"
+                    android:layout_marginLeft="4.0dp"
+                    android:layout_marginRight="5.0dp"
+                    android:layout_marginTop="3.0dp"
+                    android:drawableLeft="@drawable/icon_user_address"
+                    android:drawablePadding="5.0dp"
+                    android:drawableRight="@drawable/ic_arrow_right"
+                    android:gravity="center_vertical|left"
+                    android:text="@string/user_center_addr"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/user_loginout_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40.0dp"
+                android:textColor="#ffffff"
+                android:text="@string/user_center_exit"
+                android:background="@drawable/btn_exit_selector" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

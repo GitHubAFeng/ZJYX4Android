@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ihangjing.HJControls.HJMoveRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1.5dp"
+    android:layout_marginTop="1.5dp"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:id="@+id/ll_opt"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dp"
+        android:background="#d2d2d2"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_del"
+            android:layout_width="60.0dp"
+            android:layout_height="40.0dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10.0dp"
+            android:background="#ff6a00"
+            android:text="@string/addr_list_del"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="60.0dp"
+            android:layout_height="40.0dp"
+            android:layout_gravity="center"
+            android:background="@color/topbar_bg_color"
+            android:text="@string/addr_list_edit"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dp"
+        android:background="#ffffff" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout012"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dp"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textSize="14.0dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dp" >
+
+                <TextView
+                    android:id="@+id/tv_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:textSize="14.0dp" />
+
+                <TextView
+                    android:id="@+id/tv_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40.0dp"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:textSize="14.0dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</com.ihangjing.HJControls.HJMoveRelativeLayout>

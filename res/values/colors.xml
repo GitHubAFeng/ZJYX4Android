@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="index_red">#ffc24e00</color>
+    <color name="index_light">#fffafafa</color>
+    <color name="index_deep">#ffededed</color>
+    <color name="index_special">#fffffdeb</color>
+    <color name="index_ad">#ffd0d0d0</color>
+
+    <drawable name="label_color">#FF6BB324</drawable>
+    <drawable name="status_color">#FFFF0000</drawable>
+    <drawable name="tweet_user_color">#FF52991F</drawable>
+    <drawable name="tweet_color">#FF000000</drawable>
+    <drawable name="tweet_meta_color">#FF999999</drawable>
+
+    <color name="btn_focused_color_yellow">#fffdfdfd</color>
+    <color name="btn_pressed_color_light">#fffdfdfd</color>
+    <color name="btn_default_color_light">#ffff5f11</color>
+    <color name="dialog_back">#50000000</color>
+    <color name="shoplist_huise">#ff000000</color>
+    <color name="light_white">#fffafafa</color>
+    <color name="black_shadow">#b2000000</color>
+    <color name="white_shadow">#b2ffffff</color>
+    <color name="deep_black">#ff000000</color>
+    <color name="opaque_red">#f00</color>
+    <color name="translucent_red">#80ff0000</color>
+    <color name="link_color">#FF0066CC</color>
+    <color name="status_background">#FFA</color>
+    <color name="status_text">#000</color>
+    <color name="simiple_button_color">#FFF</color>
+    <color name="simple_text_color">#FF52991F</color>
+    <color name="body_background">#FFF</color>
+    <color name="clear">#00000000</color>
+    <color name="dimgray">#ff3c3c3c</color>
+    <color name="button_text">#444</color>
+    <color name="action_bar">#fff</color>
+    <color name="action_bar_pressed">#ffd0d0d0</color>
+    <color name="self_background">#FFFAF4BE</color>
+    <color name="mention_background">#FFC9E6F8</color>
+    <color name="trans">#00000000</color>
+    <color name="brown">#ff88542d</color>
+    <color name="orange">#ffff7700</color>
+    <color name="green">#ff84aa00</color>
+    <color name="blue">#ff4fa7d6</color>
+    <color name="red">#fff77f00</color>
+    <color name="white">#ffffffff</color>
+    <color name="light_bule">#ff4fa7d7</color>
+    <color name="light_brown">#ffefead6</color>
+    <color name="trans_white">#ddffffff</color>
+    <color name="trans_black">#44000000</color>
+    <color name="grey">#ff666666</color>
+    <color name="black">#ff000000</color>
+    <color name="Black">#ff000000</color>
+    <color name="DarkBlue">#ff818e94</color>
+    <color name="Grey">#ff888888</color>
+    <color name="lightgrey">#ffefefef</color>
+    <color name="Drekgreen">#ff094e16</color>
+    <color name="nopass_color">#ffff7f7f</color>
+    <color name="pass">#ffa3c35d</color>
+    <color name="onpass">#fff5b955</color>
+    <color name="passing">#ff78b4ff</color>
+    <color name="dark_grey">#ffcccccc</color>
+    <color name="text_color_orange">#ffff6600</color>
+    <color name="DarkRed">#ff8a0808</color>
+    <color name="MainBgColor">#ffe4e4e4</color>
+    <color name="White">#ffffffff</color>
+    <color name="register_agreement_pressed">#ff00bfff</color>
+    <color name="more_customer_service_call">#ff9c9c9c</color>
+    <color name="light_grey">#ffcccccc</color>
+    <color name="deep_grey">#ff666666</color>
+    <color name="slateblue">#ff697fa4</color>
+    
+    <!-- 善食 -->
+    <color name="transparent">#00000000</color>
+    <color name="background_gray">#EDEDED</color>
+    <color name="topbar_bg_color">#F09b40</color>
+    <color name="topbar_bg_color_press">#925842</color>
+    <color name="settings_entry">#ff59493f</color>
+    <color name="black1">#ff333333</color>
+    <color name="black2">#ff666666</color>
+    <color name="black3">#ff999999</color>
+    <color name="settings_attribute">#ff4d0c14</color>
+    
+    
+    
+    
+     <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+</resources>

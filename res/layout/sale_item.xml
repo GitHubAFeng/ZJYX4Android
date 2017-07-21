@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="120.0dp"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_img"
+            android:layout_width="100.0dp"
+            android:layout_height="100.0dp"
+            android:layout_marginLeft="5.0dp"
+            android:layout_marginTop="5.0dp"
+            android:background="@drawable/icon" >
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="120.0dp"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="2.0dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_foodname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="name"
+                android:textColor="#ff0000"
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:id="@+id/tv_foodinfo"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dp"
+                android:ellipsize="marquee"
+                android:text="加载中..."
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/tv_point"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="公益积分：10"
+                android:textColor="#000000"
+                android:textSize="10.0sp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_foodprice"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="price"
+                    android:textColor="#000000"
+                    android:textSize="14.0sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="30.0dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/btn_number_minus"
+                        android:layout_width="30.0dp"
+                        android:layout_height="30.0dp"
+                        android:background="@drawable/selector_btn_number_minus"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/tv_foodcount"
+                        android:layout_width="50.0dp"
+                        android:layout_height="30.0dp"
+                        android:background="@drawable/number_bg"
+                        android:gravity="center"
+                        android:paddingLeft="4.0dip"
+                        android:paddingRight="4.0dip"
+                        android:singleLine="true"
+                        android:text="0"
+                        android:textColor="#ff000000"
+                        android:textSize="16.0sp" />
+
+                    <Button
+                        android:id="@+id/btn_number_plus"
+                        android:layout_width="30.0dp"
+                        android:layout_height="30.0dp"
+                        android:background="@drawable/selector_btn_number_plus"
+                        android:gravity="center" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

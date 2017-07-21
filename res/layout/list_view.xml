@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff">
+    <RelativeLayout
+        android:id="@+id/shoplist_loadingdata_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.0dip" 
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/near_restaurant_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="4.0dip"
+            android:text="数据加载中..."
+            android:textColor="@color/grey"
+            android:textSize="@dimen/content_title_size" />
+
+        <ProgressBar
+            android:id="@+id/near_restaurant_progress_bar"
+            style="@style/loading_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/near_restaurant_text" />
+
+        <ImageView
+            android:id="@+id/near_rearaurant_loadingdata_line"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/near_restaurant_progress_bar"
+            android:layout_marginTop="4.0dip"
+            android:background="@drawable/horizontal_line" />
+    </RelativeLayout>
+    <ListView 
+        android:id="@+id/lv_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        
+    </ListView>
+
+</LinearLayout>

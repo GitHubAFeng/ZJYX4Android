@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginRight="8.0dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/addorder_foodname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:textSize="14.0dp"
+            android:paddingLeft="20.0dp"
+            android:text="TextView"/>
+
+        <Button
+            android:id="@+id/btn_number_minus"
+            android:layout_width="30.0dp"
+            android:layout_height="30.0dp"
+            android:background="@drawable/selector_btn_number_minus"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/tv_foodcount"
+            android:layout_width="40.0dp"
+            android:layout_height="25.0dp"
+            android:background="#969696"
+            android:gravity="center"
+            android:paddingLeft="4.0dip"
+            android:paddingRight="4.0dip"
+            android:singleLine="true"
+            android:phoneNumber="true"
+            android:text="1"
+            android:textColor="#ff000000"
+            android:textSize="16.0sp"
+             />
+
+        <Button
+            android:id="@+id/btn_number_plus"
+            android:layout_width="30.0dp"
+            android:layout_height="30.0dp"
+            android:background="@drawable/selector_btn_number_plus"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="2.0dip"
+        android:layout_marginLeft="5.0dp"
+        android:layout_marginRight="5.0dp"
+        android:background="@drawable/v_black" />
+
+</LinearLayout>

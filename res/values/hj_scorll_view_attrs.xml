@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="HJScorllADV">
+        <attr name="scorllTime" format="integer" /><!-- 滚动时间间隔 -->
+        <attr name="isShowButton" format="boolean" /><!-- 是否显示上一副，下一副按钮 -->
+        <attr name="leftButtonSrc" format="reference" /><!-- 左边按钮图片 -->
+        <attr name="rightButtonSrc" format="reference" /><!-- 右边按钮图片 -->
+        <attr name="backgoundSrc" format="reference"/><!-- 默认背景图片 -->
+        <attr name="win8Row" format="integer" /><!-- Win8风格分类多少列 -->
+        <attr name="isShowDots" format="boolean" /><!-- 是否显示下面的指示器 -->
+        <attr name="dotsBackground" format="reference|color" /><!-- 下面的指示背景色，整个一条 -->
+        <attr name="dotsBgAlpha" format="float" /><!-- 下面的指示背景色的透明度 整个一条-->
+        <attr name="readData" format="integer"/><!-- 是否自动读取数据 0 广告PPT自动读取 1商家PPT不读取通过设置-->
+    </declare-styleable>
+    
+    <declare-styleable name="HelloGallery">  
+                <attr name="android:galleryItemBackground"/>  
+    </declare-styleable> 
+
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15.0dip"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/addorder_foodname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:text="TextView"
+        android:layout_alignParentLeft="true"
+        android:textColor="#000000"
+        android:textSize="14.0sp" />
+
+    <TextView
+        android:id="@+id/addorder_foodcount"
+        android:layout_width="100.0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="20.0dip"
+        android:gravity="right"
+        android:layout_toLeftOf="@+id/addorder_foodprice"
+        android:text="TextView"
+        android:textColor="@color/Grey"
+        android:textSize="14.0sp" />
+
+    <TextView
+        android:id="@+id/addorder_foodprice"
+		android:textColor="#000000"
+		android:textSize="14.0sp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10.0dip"
+        android:text="￥30" />
+
+</RelativeLayout>

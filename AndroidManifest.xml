@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ihangjing.ZJYXForAndroid"
+    android:versionCode="1"
+    android:versionName="0.5" >
+
+    <uses-sdk android:minSdkVersion="8" />
+ <!--   android:name=".AlixDemo" --> 
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:name=".EasyEatApplication"
+        android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        <activity
+            android:label="@string/app_name"
+            android:name=".StartApp"
+          
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" 
+                    android:configChanges="orientation|keyboardHidden|keyboard|screenLayout"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="wxeed3468921d041d3"/>
+            </intent-filter>
+        </activity>
+        <receiver
+            android:name="com.ihangjing.wxpay.AppRegister">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"/>
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+			android:name="com.mob.tools.MobUIShell"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"
+			android:configChanges="keyboardHidden|orientation"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="stateHidden|adjustResize" >
+			<!--
+			AuthorizeAdapter继承自
+			cn.sharesdk.framework. authorize.AuthorizeAdapter，
+			可以监听到页面的生命周期，也能获取页面的各种UI控件。
+			开发者可以通过继承AuthorizeAdapter，重写其方法，
+			并获取各种UI来自定义这个页面的行为。
+			-->
+			<meta-data android:name="AuthorizeAdapter"
+			android:value="com.ihangjing.ZJYXForAndroid.QQWebLoginActivity" />
+		</activity>
+        <!-- alipay sdk end -->
+        <activity android:name="AddRunOrder"/>
+        <activity android:name="AccountMoneyDetail"/>
+        <activity android:name="MyAccountListView"/>
+        <activity android:name="ShopList" />
+        <activity android:name="FoodDetail" />
+        <activity android:name="ShopDetail" 
+            android:configChanges="orientation|keyboardHidden|keyboard|screenLayout"/>
+        <activity android:name="HotAreaList" />
+        <activity android:name="HotAreaSubList" />
+        <activity android:name="ShopOrder" />
+        <activity android:name="FoodList" />
+        <activity android:name="FsgFoodList" />
+        <activity android:name="OrderList" />
+        <activity android:name="SystemSet" />
+        <activity android:name="Login" />
+        <activity android:name="Regedit" />
+        <activity android:name="RegeditAgreement" />
+        <activity android:name="AddressList" />
+        <activity android:name="AddAddress" />
+        <activity android:name="UserCenterIndex" />
+        <activity android:name="About" />
+        <activity android:name="CheckUpdate" />
+        <activity android:name="ImageListDemo" />
+        <activity android:name="MainActivity"/>
+        <activity android:name="ShopCart" />
+        <activity android:name="FindPassword"/>
+        <activity android:name="Disclaimer" />
+        <activity android:name="SearchShop" />
+        <activity android:name="AddOrder" />
+        <activity android:name=".ShowOnMap" />
+        <activity android:name=".SearchOnMap" />
+        <activity android:name=".MyInfo" />
+        <activity android:name="ShopNews" />
+        <activity android:name="FsgShopList" 
+            android:configChanges="orientation|keyboardHidden|keyboard|screenLayout"/>
+        <activity android:name="ShowNews" />
+        <activity android:name="FsgSearchShop" />
+        <activity android:name="UserInfo" />
+        <activity android:name="GiftCart" />
+        <activity android:name="GiftDedail" />
+        <activity android:name="GiftList" />
+        <activity android:name="GiftOrderList" />
+        <activity android:name="ResetPassword" />
+		<activity android:name=".ShopTypeList" />
+		<activity android:name=".SelCity" />
+		<activity android:name=".SelSection" />
+		<activity android:name=".SelCircle" />
+		<activity android:name=".SelBuilding" />
+		<activity android:name=".bindcard" />
+		<activity android:name=".cardlist" />
+		<activity android:name="BindCoupon" />
+		<activity android:name="CouponList" />
+		<activity android:name=".Skill" />
+		<activity android:name=".showskill" />
+		<activity android:name=".skillcart" />
+		<activity android:name=".Tuan" />
+		<activity android:name=".showtuan" />
+		<activity android:name=".tuancart" />
+		<activity android:name="RecNewShop"/>
+		<activity android:name="DiscountList"/>
+		<activity android:name="GroupBuyDetail"/>
+		<activity android:name="MyFavorShopActivity"/>
+		<activity android:name="GetOrderByPhone"></activity>
+		<activity android:name="UserAddressList"></activity>
+		<activity android:name="CommentList"></activity>
+		<activity android:name="CommentDetail"></activity>
+		<activity android:name="MyFriendsListView"></activity>
+		<activity android:name="MyCouponsListView"></activity>
+		<activity android:name="MyPhoneBookListView"></activity>
+		<activity android:name="MyPointListView"></activity>
+		<activity android:name="MyFriendsPointTopListView"></activity>
+		<activity android:name="MyFriendsBuysListView"></activity>
+		<activity android:name="MyMessageListActivity"></activity>
+		<activity android:name="NoticePopActivity" android:theme="@style/Activity.Transparent"></activity>
+		<activity android:name="PopAdvActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+		<activity android:name="MainTabActivity"  android:theme="@android:style/Theme.NoTitleBar"/>
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="52ca5c6856240b375149b152" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="own" />
+        <activity 
+            android:name="com.alipay.android.app.sdk.WapPayActivity" 
+            android:screenOrientation="portrait" >
+		</activity>
+        
+        <!--微信分享回调 -->
+		 <activity
+		     android:name=".wxapi.WXEntryActivity"
+		     android:theme="@android:style/Theme.Translucent.NoTitleBar"
+		     android:configChanges="keyboardHidden|orientation|screenSize"
+		     android:exported="true"
+		     android:screenOrientation="portrait" /> 
+		
+		<!--易信分享回调 -->
+		 <activity
+		     android:name=".yxapi.YXEntryActivity"
+		     android:theme="@android:style/Theme.Translucent.NoTitleBar"
+		     android:configChanges="keyboardHidden|orientation|screenSize"
+		     android:exported="true"
+		     android:screenOrientation="portrait" />
+		
+		 <!-- 支付宝分享回调 -->
+		<activity
+		    android:name=".apshare.ShareEntryActivity"
+		    android:theme="@android:style/Theme.Translucent.NoTitleBar"
+		    android:configChanges="keyboardHidden|orientation|screenSize"
+		    android:exported="true"/>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true" 
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.ZJYXForAndroid" >
+                </action>
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="pvrgSkqUXsMiYID1ilfbgGw2QWwMbPRr" />
+        <!--
+        <service
+            android:exported="true"
+            android:name="com.ihangjing.common.LocationService" >
+        </service>		
+        -->
+    </application>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+    
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    
+	<uses-permission android:name="android.permission.READ_CONTACTS" />
+	<!-- sharesdk要用到的添加的权限 -->
+	<uses-permission android:name="android.permission.GET_TASKS" />
+	 <!-- 蓝牙分享所需的权限 -->
+	  <uses-permission android:name="android.permission.BLUETOOTH" />
+	  <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+</manifest>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/topbar_bg_color" >
+
+        <Button
+            android:id="@+id/title_bar_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14.0dip"
+            android:background="@drawable/title_back_bg"
+            android:gravity="right|center"
+            android:paddingRight="8.0dip" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:shadowColor="#75000000"
+            android:shadowDy="2.0"
+            android:shadowRadius="2.0"
+            android:text="@string/showorder_title"
+            android:textColor="#ffffffff"
+            android:textSize="20.0sp" />
+
+        <Button
+            android:id="@+id/title_bar_right_btn"
+            style="@style/title_bar_button_sytle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/red_btn_selector"
+            android:text="@string/order_detail_con"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <RadioGroup
+        android:id="@+id/rg_opt"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dp"
+        android:background="#ffffff"
+        android:orientation="horizontal" 
+        android:layout_below="@+id/register_title_bar">
+
+        <RadioButton
+            android:id="@+id/rb_unre"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dp"
+            android:textSize="14.0dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/rb_tab_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="订单状态"
+            android:textColor="#000000" />
+
+        <RadioButton
+            android:id="@+id/rb_re"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/rb_tab_selector"
+            android:button="@null"
+            android:textSize="14.0dp"
+            android:gravity="center"
+            android:text="订单详情"
+            android:textColor="#000000" />
+
+        
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vs_select"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rg_opt"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

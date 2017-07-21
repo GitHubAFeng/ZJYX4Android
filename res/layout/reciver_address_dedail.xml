@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/search_restaurant_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_bar_with_nor_button" />
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dp" >
+
+        <TextView
+            android:layout_width="70.0dp"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:textColor="#000000" 
+            android:text="@string/addr_detail_map"/>
+        <Button 
+            android:id="@+id/btn_area"
+            android:layout_width="fill_parent"
+            android:layout_height="30.0dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/red_btn_selector"/>
+       
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dp" >
+
+        <TextView
+            android:layout_width="70.0dp"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:textColor="#000000" 
+            android:text="@string/addr_list_addr"/>
+        <EditText 
+            android:id="@+id/et_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dp" >
+
+        <TextView
+            android:layout_width="70.0dp"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:textColor="#000000" 
+            android:text="@string/order_detail_reciver"/>
+        <EditText 
+            android:id="@+id/et_reciver"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dp" >
+
+        <TextView
+            android:layout_width="70.0dp"
+            android:gravity="right"
+            android:layout_height="wrap_content"
+            android:textColor="#000000" 
+            android:text="@string/ordercontent_ph"/>
+        <EditText 
+            android:id="@+id/et_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+</LinearLayout>

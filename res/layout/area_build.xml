@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+    <include
+        android:id="@+id/search_restaurant_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/title_bar_withbutton" />
+
+    <ImageView
+        android:id="@+id/search_choose_title_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_restaurant_title_bar"
+        android:background="@drawable/second_level_title_line" />
+
+    <ListView
+        android:id="@+id/shoptype_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/search_choose_title_line"
+        android:background="@color/white"
+        android:cacheColorHint="@color/white"
+        android:divider="@drawable/horizontal_line" />
+</RelativeLayout>

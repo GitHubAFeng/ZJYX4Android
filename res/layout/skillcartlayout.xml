@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bar_height"
+    android:background="@color/topbar_bg_color"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/TextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:shadowColor="#75000000"
+            android:shadowDy="2.0"
+            android:shadowRadius="2.0"
+            android:text="@string/gift_cart_title"
+            android:textColor="#ffffffff"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/shopcart_scrollView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40.0dip"
+        android:layout_below="@+id/linearLayout1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/s_linearLayout8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/shopcart_linearLayout5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shopcart_linearLayout6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10.0dip"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip" >
+
+                <!-- 订单详情 -->
+
+                <TextView
+                    android:id="@+id/textView7"
+                    style="@style/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12.0dip"
+                    android:text="详情" />
+                <!-- 菜品列表会出现在这里 -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="2.0dip"
+                android:background="@drawable/status_bg"
+                android:orientation="vertical"
+                android:padding="8.0dip" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gift_order_list_g_name"
+                        android:textColor="#000000"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:id="@+id/tv_name_n"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loading"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tv_point"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gift_order_list_u_point"
+                        android:textColor="#000000"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:id="@+id/tv_point_n"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/loading"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="2.0dip"
+                android:background="@drawable/status_bg"
+                android:orientation="vertical"
+                android:padding="8.0dip" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/tv_uname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/order_detail_reciver"
+                        android:textColor="#000000"
+                        android:textSize="16.0sp" />
+
+                    <EditText
+                        android:id="@+id/et_uname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_bg_inputname"
+                        android:hint="@string/user_hidden"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dp" >
+
+                    <TextView
+                        android:id="@+id/tv_uphone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ordercontent_ph"
+                        android:textColor="#000000"
+                        android:textSize="16.0sp" />
+
+                    <EditText
+                        android:id="@+id/et_uphone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_bg_inputname"
+                        android:hint="@string/no_phone"
+                        android:phoneNumber="true"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dp" >
+
+                    <TextView
+                        android:id="@+id/tv_uaddr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/order_addr"
+                        android:textColor="#000000"
+                        android:textSize="16.0sp" />
+
+                    <EditText
+                        android:id="@+id/et_uaddr"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_bg_inputname"
+                        android:hint="@string/gift_cart_addr"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_point"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:textColor="#ff000000" >
+
+                    <LinearLayout
+                        android:id="@+id/sendtvLinearLayout2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ff000000"
+                        android:orientation="vertical" 
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/s_textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2.0dip"
+                            android:layout_marginTop="5.0dip"
+                            android:text="@string/shop_cart_send_mode"
+                            android:textColor="#ff000000"
+                            android:textSize="16.0sp" />
+                    
+
+                    <RadioGroup
+                        android:id="@+id/eattyperadioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/reattype0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/shop_cart_send_mode_1"
+                            android:textColor="#ff000000" >
+                        </RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/reattype11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shop_cart_send_mode_2"
+                            android:textColor="#ff000000" >
+                        </RadioButton>
+                    </RadioGroup>
+					</LinearLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dp" >
+
+                        <TextView
+                            
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shop_cart_s_time"
+                            android:textColor="#000000"
+                            android:textSize="16.0sp" />
+
+                        <Button
+                            android:id="@+id/btn_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_bg_input"
+                            android:textColor="#ffffff"
+                            android:text="@string/gift_cart_time" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_remark"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dp" >
+
+                    <TextView
+                        android:id="@+id/tv_uremark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ordercontent_note"
+                        android:textColor="#000000"
+                        android:textSize="16.0sp" />
+
+                    <EditText
+                        android:id="@+id/et_uremark"
+                        android:layout_width="fill_parent"
+                        android:layout_height="70.0dip"
+                        android:layout_marginBottom="5.0dip"
+                        android:background="@drawable/selector_bg_inputname"
+                        android:gravity="top|left|center"
+                        android:hint="@string/note_default"
+                        android:paddingBottom="4.0dip"
+                        android:paddingLeft="10.0dip"
+                        android:paddingRight="10.0dip"
+                        android:paddingTop="4.0dip"
+                        android:textColor="#ff000000"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    
+    <Button 
+        android:id="@+id/btn_submit"
+        android:layout_width="100.0dp"
+        android:layout_height="50.0dp"
+        android:text="@string/public_add"
+        android:textColor="#ffffff"
+        android:textSize="24.0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/red_btn_selector"/>
+
+</RelativeLayout>

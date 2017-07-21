@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_img"
+            android:layout_width="90.0dp"
+            android:layout_height="90.0dp"
+            android:layout_marginLeft="5.0dp"
+            android:layout_marginTop="5.0dp"
+            android:background="@drawable/food_defalut" >
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="2.0dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_foodname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="name"
+                android:textColor="#000000"
+                android:textSize="13.0sp" />
+
+            <TextView
+                android:id="@+id/tv_foodinfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="加载中..."
+                android:textSize="12.0sp" />
+
+            <TextView
+                android:id="@+id/tv_point"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="月销：10"
+                android:textSize="12.0sp" />
+
+            <TextView
+                android:id="@+id/tv_foodprice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="price"
+                android:textColor="#ff0000"
+                android:textSize="12.0sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30.0dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="20.0dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/ll_opt_m"
+                    android:layout_width="80.0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <Button
+                        android:id="@+id/btn_number_minus"
+                        android:layout_width="30.0dp"
+                        android:layout_height="30.0dp"
+                        android:background="@drawable/selector_btn_number_minus"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/tv_foodcount"
+                        android:layout_width="50.0dp"
+                        android:layout_height="30.0dp"
+                        android:gravity="center"
+                        android:paddingLeft="4.0dip"
+                        android:paddingRight="4.0dip"
+                        android:singleLine="true"
+                        android:text="0"
+                        android:textColor="#f22a39"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_number_plus"
+                    android:layout_width="30.0dp"
+                    android:layout_height="30.0dp"
+                    android:background="@drawable/selector_btn_number_plus"
+                    android:gravity="center" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_sec_spec"
+                    android:layout_width="70.0dp"
+                    android:layout_height="30.0dp"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    
+
+                    <Button
+                        android:id="@+id/btn_sec_spec"
+                        android:layout_width="70.0dp"
+                        android:layout_height="25.0dp"
+                        android:background="@drawable/gray_empt_round_selector"
+                        android:gravity="center"
+                        android:text="可选规格"
+                        android:layout_alignParentBottom="true"
+                        android:textColor="@color/topbar_bg_color"
+                        android:textSize="12.0dp" />
+                    
+                    <TextView
+                        android:id="@+id/tv_shop_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="5.0dp"
+                        android:background="@drawable/red_circle_shape"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#ffffff" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

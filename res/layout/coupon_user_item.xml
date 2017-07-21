@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+        android:id="@+id/tv_key"
+        android:layout_marginTop="5.0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/btn_del"
+        android:textColor="#000000"/>
+    
+    <Button 
+        android:id="@+id/btn_del"
+        android:layout_marginTop="5.0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#833300"
+        android:text="删除"
+        android:textColor="#ffffff"
+        android:layout_alignParentRight="true"/>
+    
+    <ImageView 
+        android:layout_marginTop="5.0dp"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dp"
+        android:background="#e2eefe"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

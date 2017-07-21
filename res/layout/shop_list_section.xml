@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_btn_opt_1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10.0dp"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.ihangjing.HJControls.HJSelectButton
+                android:id="@+id/btn_orderby"
+                style="@style/near_menu_order_tv"
+                android:drawableRight="@drawable/ic_arrow_up"
+                android:text="@string/public_all_type" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="2.0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dp"
+            android:background="@drawable/vertical_line" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.ihangjing.HJControls.HJSelectButton
+                android:id="@+id/btn_shoptype"
+                style="@style/near_menu_order_tv"
+                android:drawableRight="@drawable/icon_transparent"
+                android:text="@string/shop_list_default" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="2.0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dp"
+            android:background="@drawable/vertical_line" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.ihangjing.HJControls.HJSelectButton
+                android:id="@+id/btn_shoptop"
+                style="@style/near_menu_order_tv"
+                android:drawableRight="@drawable/icon_transparent"
+                android:text="@string/shop_list_all" />
+        </LinearLayout>
+
+        
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="2.0dip"
+        android:layout_marginTop="1.0dp"
+        android:background="@drawable/index_shadow_line_top" />
+
+</LinearLayout>

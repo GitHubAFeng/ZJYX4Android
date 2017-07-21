@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+    
+    <include
+        android:id="@+id/userinfo_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/title_bar" />
+    <ListView
+        android:id="@+id/lv_message" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userinfo_title_bar"
+        android:layout_above="@+id/ll_send_message"
+        android:dividerHeight="1.0px"
+        android:divider="#ffffff"
+        android:cacheColorHint="#00000000"
+        />
+    <RelativeLayout 
+        android:id="@+id/ll_send_message"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_height="80.0dp">
+        <EditText
+            android:id="@+id/tv_message" 
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@+id/btn_send"
+            android:hint="请输入消息内容"
+            />
+        <Button 
+            android:id="@+id/btn_send"
+            android:layout_height="fill_parent"
+            android:layout_width="50.0dp"
+            android:text="发表"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true"
+            android:background="#833300"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="left|center"
+    android:background="@color/background_gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar_no_btn" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include layout="@layout/user_main_login" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="80.0dp"
+                        android:layout_weight="1.0"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="50.0dp"
+                            android:layout_height="50.0dp"
+                            android:background="@drawable/my_point" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dp"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/tv_point"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="#60e349"
+                                android:textSize="18.0dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10.0dp"
+                                android:text="@string/mor_my_point"
+                                android:textColor="#b2b2b2"
+                                android:textSize="12.0dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_account"
+                        android:layout_width="fill_parent"
+                        android:layout_height="80.0dp"
+                        android:layout_marginLeft="1.0dp"
+                        android:layout_weight="1.0"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="36.0dp"
+                            android:layout_height="50.0dp"
+                            android:background="@drawable/my_money" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dp"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/tv_money"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="￥0.00"
+                                android:textColor="#f19141"
+                                android:textSize="18.0dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10.0dp"
+                                android:text="@string/mor_my_money"
+                                android:textColor="#b2b2b2"
+                                android:textSize="12.0dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_orderlist"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3.0dp"
+                        android:layout_marginLeft="4.0dp"
+                        android:layout_marginRight="5.0dp"
+                        android:layout_marginTop="3.0dp"
+                        android:drawableLeft="@drawable/icon_user_paotui"
+                        android:drawablePadding="5.0dp"
+                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/user_center_run_order"
+                        android:textColor="#000000" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="2.0dip"
+                        android:background="@color/background_gray" />
+
+                    <TextView
+                        android:id="@+id/tv_giftlist"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3.0dp"
+                        android:layout_marginLeft="4.0dp"
+                        android:layout_marginRight="5.0dp"
+                        android:layout_marginTop="3.0dp"
+                        android:drawableLeft="@drawable/icon_user_gift"
+                        android:drawablePadding="5.0dp"
+                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/user_center_point_order"
+                        android:textColor="#000000" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="2.0dip"
+                        android:background="@color/background_gray" />
+
+                    <TextView
+                        android:id="@+id/tv_n_point"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3.0dp"
+                        android:layout_marginLeft="4.0dp"
+                        android:layout_marginRight="5.0dp"
+                        android:layout_marginTop="3.0dp"
+                        android:drawableLeft="@drawable/ic_point"
+                        android:drawablePadding="5.0dp"
+                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/user_center_point"
+                        android:textColor="#000000" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip"
+                        android:background="@color/background_gray"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_n_money"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dp"
+                        android:layout_marginBottom="3.0dp"
+                        android:layout_marginLeft="4.0dp"
+                        android:layout_marginRight="5.0dp"
+                        android:layout_marginTop="3.0dp"
+                        android:drawableLeft="@drawable/icon_user_point"
+                        android:drawablePadding="5.0dp"
+                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/mor_acount_input"
+                        android:textColor="#000000"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_password"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3.0dp"
+                        android:layout_marginLeft="4.0dp"
+                        android:layout_marginRight="5.0dp"
+                        android:layout_marginTop="3.0dp"
+                        android:drawableLeft="@drawable/icon_user_password"
+                        android:drawablePadding="5.0dp"
+                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/user_center_login_password"
+                        android:textColor="#000000" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="2.0dip"
+                        android:background="@color/background_gray" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_pay_password"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_pay_password"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="3.0dp"
+                            android:layout_marginLeft="4.0dp"
+                            android:layout_marginRight="5.0dp"
+                            android:layout_marginTop="3.0dp"
+                            android:drawableLeft="@drawable/set_pay_password"
+                            android:drawablePadding="5.0dp"
+                            android:drawableRight="@drawable/ic_arrow_right"
+                            android:gravity="center_vertical|left"
+                            android:text="@string/user_center_pay_password"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="2.0dip"
+                        android:background="@color/background_gray" />
+
+                    <TextView
+                        android:id="@+id/tv_myfriends"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3.0dp"
+                        android:layout_marginLeft="4.0dp"
+                        android:layout_marginRight="5.0dp"
+                        android:layout_marginTop="3.0dp"
+                        android:drawableLeft="@drawable/icon_user_shop"
+                        android:drawablePadding="5.0dp"
+                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/user_center_shop"
+                        android:textColor="#000000" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="2.0dip"
+                        android:background="@color/background_gray"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_mycoupons"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10.0dp"
+                        android:layout_marginTop="10.0dp"
+                        android:background="@drawable/list_ico"
+                        android:paddingLeft="20.0dp"
+                        android:text="@string/user_center_coupon"
+                        android:textColor="#000000"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="2.0dip"
+                        android:background="@color/background_gray"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_mymessage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10.0dp"
+                        android:layout_marginTop="10.0dp"
+                        android:background="@drawable/list_ico"
+                        android:paddingLeft="20.0dp"
+                        android:text="花马巴黎互动"
+                        android:textColor="#000000"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="2.0dip"
+                        android:background="@color/background_gray" />
+
+                    <TextView
+                        android:id="@+id/tv_myaddress"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3.0dp"
+                        android:layout_marginLeft="4.0dp"
+                        android:layout_marginRight="5.0dp"
+                        android:layout_marginTop="3.0dp"
+                        android:drawableLeft="@drawable/icon_user_address"
+                        android:drawablePadding="5.0dp"
+                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/user_center_addr"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/ll_activity"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3.0dp"
+                        android:layout_marginLeft="4.0dp"
+                        android:layout_marginRight="5.0dp"
+                        android:layout_marginTop="3.0dp"
+                        android:drawableLeft="@drawable/ic_activity"
+                        android:drawablePadding="5.0dp"
+                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/mor_point"
+                        android:textColor="#000000" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="2.0dip"
+                        android:background="@color/background_gray" />
+
+                    <TextView
+                        android:id="@+id/ll_connect"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3.0dp"
+                        android:layout_marginLeft="4.0dp"
+                        android:layout_marginRight="5.0dp"
+                        android:layout_marginTop="3.0dp"
+                        android:drawableLeft="@drawable/ic_contact_us"
+                        android:drawablePadding="5.0dp"
+                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/contact_us"
+                        android:textColor="#000000" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="2.0dip"
+                        android:background="@color/background_gray" />
+
+                    <TextView
+                        android:id="@+id/ll_share"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3.0dp"
+                        android:layout_marginLeft="4.0dp"
+                        android:layout_marginRight="5.0dp"
+                        android:layout_marginTop="3.0dp"
+                        android:drawableLeft="@drawable/ic_weibo_setting"
+                        android:drawablePadding="5.0dp"
+                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/mor_share"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/ll_update"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3.0dp"
+                        android:layout_marginLeft="4.0dp"
+                        android:layout_marginRight="5.0dp"
+                        android:layout_marginTop="3.0dp"
+                        android:drawableLeft="@drawable/ic_check_update"
+                        android:drawablePadding="5.0dp"
+                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/check_update"
+                        android:textColor="#000000" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="2.0dip"
+                        android:background="@color/background_gray"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/ll_opinin"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3.0dp"
+                        android:layout_marginLeft="4.0dp"
+                        android:layout_marginRight="5.0dp"
+                        android:layout_marginTop="3.0dp"
+                        android:drawableLeft="@drawable/ic_feedback"
+                        android:drawablePadding="5.0dp"
+                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/feedback"
+                        android:textColor="#000000"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="2.0dip"
+                        android:background="@color/background_gray" />
+
+                    <TextView
+                        android:id="@+id/ll_about"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3.0dp"
+                        android:layout_marginLeft="4.0dp"
+                        android:layout_marginRight="5.0dp"
+                        android:layout_marginTop="3.0dp"
+                        android:drawableLeft="@drawable/ic_about_us"
+                        android:drawablePadding="5.0dp"
+                        android:drawableRight="@drawable/ic_arrow_right"
+                        android:gravity="center_vertical|left"
+                        android:text="@string/about"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/user_loginout_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40.0dp"
+                    android:background="@drawable/btn_exit_selector"
+                    android:text="@string/user_center_exit"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

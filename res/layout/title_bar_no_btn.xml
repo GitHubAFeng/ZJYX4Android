@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:fitsSystemWindows="true"  
+    android:clipToPadding="true"
+    android:layout_height="@dimen/title_bar_height"
+    android:background="@color/topbar_bg_color"
+    android:orientation="horizontal" >
+
+    
+
+    <TextView
+        android:id="@+id/title_bar_content_tv"
+        style="@style/title_bar_content_sytle"
+        android:layout_toRightOf="@+id/title_bar_back_btn"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_marginRight="60.0dp"
+        android:text="@string/nav_3" />
+    
+    
+
+</RelativeLayout>

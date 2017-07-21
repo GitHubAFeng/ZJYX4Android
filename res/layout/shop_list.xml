@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/shoplist_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:id="@+id/shoplist_linearLayout_nodata"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/errortext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:drawableLeft="@drawable/icon_collect"
+            android:gravity="center"
+            android:text="周边外卖1"
+            android:textColor="#ff000000"
+            android:textSize="16.0sp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10.0dip"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:background="@drawable/ic_tips_bg"
+            android:orientation="vertical"
+            android:paddingBottom="22.0dip"
+            android:paddingLeft="16.0dip"
+            android:paddingRight="14.0dip"
+            android:paddingTop="24.0dip" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.0dip"
+                android:src="@drawable/ic_tips" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowColor="#70ffffff"
+                android:text="Tips:您可以向我们推荐没有收录的商家 ，我们会安排工作人员进行洽谈收录，方便您下次点餐！"
+                android:textColor="#ff000000"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20.0dip"
+            android:background="@drawable/selector_bg_btn_orderfood"
+            android:paddingBottom="6.0dip"
+            android:paddingLeft="25.0dip"
+            android:paddingRight="25.0dip"
+            android:paddingTop="5.0dip"
+            android:shadowColor="#70ffffff"
+            android:shadowDy="1.0"
+            android:shadowRadius="1.0"
+            android:text="添加外卖"
+            android:textColor="#ffbd4b00"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" >
+
+        <ListView
+            android:id="@+id/shoplist_shoplist"
+            style="@style/list_style"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:background="#ffffff">
+    
+	<TextView 
+	    android:id="@+id/tv_top_count"
+	    android:layout_width="100.0dp"
+	    android:layout_height="wrap_content"
+	    android:text="TOP1"
+	    android:textColor="#ff2525"
+	    android:paddingLeft="10.0dp"
+	    android:textSize="18.0dp"/>
+	<TextView 
+	    android:id="@+id/tv_count"
+	    android:layout_width="80.0dp"
+	    android:layout_height="wrap_content"
+	    android:text="100"
+	    android:textColor="#2B84DC"
+	    android:textSize="16.0dp"
+	    android:textStyle="bold"/>
+	<TextView 
+	    android:id="@+id/tv_name"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="HangJing"
+	    android:textColor="#000000"
+	    android:textSize="14.0dp"
+	    />
+	    
+	   
+</LinearLayout>

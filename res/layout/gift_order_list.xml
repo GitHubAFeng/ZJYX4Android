@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bar_height"
+    android:background="@color/topbar_bg_color"
+        >
+
+        <Button
+            android:id="@+id/title_bar_back_btn"
+            style="@style/title_bar_button_sytle"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/title_back_bg"
+            android:layout_marginLeft="10.0dp"
+             />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="40.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:shadowColor="#75000000"
+            android:shadowDy="2.0"
+            android:shadowRadius="2.0"
+            android:text="@string/gift_order_list_title"
+            android:textColor="#ffffffff"
+            android:textSize="20.0sp" />
+
+        <Button
+            android:id="@+id/orderlist_btn_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10.0dip"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_icon_refresh" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/orderlist_loadingdata_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shoplist_title_bar"
+        android:layout_marginTop="4.0dip" >
+
+        <TextView
+            android:id="@+id/orderlist_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="4.0dip"
+            android:text="@string/public_get_data_notice"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/content_title_size" />
+
+        <ProgressBar
+            android:id="@+id/order_progress_bar"
+            style="@style/loading_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/orderlist_text" />
+
+        <ImageView
+            android:id="@+id/order_loadingdata_line"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/order_progress_bar"
+            android:layout_marginTop="4.0dip"
+            android:background="@drawable/horizontal_line" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/icon_collect"
+        android:drawablePadding="4.0dip"
+        android:gravity="center"
+        android:text="@string/public_net_no_data"
+        android:textColor="#ff000000"
+        android:textSize="16.0sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingTop="2.0dip" >
+
+        
+
+        <ListView
+            android:id="@+id/order_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:listSelector="#00000000" />
+    </LinearLayout>
+
+</LinearLayout>

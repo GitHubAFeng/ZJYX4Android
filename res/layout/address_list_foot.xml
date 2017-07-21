@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/index_icon_deep_bg"
+    android:paddingBottom="15.0dip"
+    android:paddingLeft="10.0dip"
+    android:paddingTop="15.0dip" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加新地址"
+        android:textColor="@color/black"
+        android:textSize="@dimen/content_title_size" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="10.0dip"
+        android:src="@drawable/arrow_gray" />
+
+</RelativeLayout>

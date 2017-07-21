@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:HJAndroid="http://schemas.android.com/apk/res/com.ihangjing.ZJYXForAndroid"
+    android:id="@+id/rl_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f7f7f7"
+    android:orientation="vertical" >
+
+   
+
+            <RelativeLayout
+                android:id="@+id/index_banner_01"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/title_bar_height"
+                android:background="@color/topbar_bg_color" >
+
+                <Button
+                    android:id="@+id/title_bar_left_btn"
+                    style="@style/title_bar_button_sytle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10.0dp"
+                    android:background="@drawable/btn_red_selector"
+                    android:textColor="#ffffff"
+                    android:textSize="10.0dp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/main_location_refresh"
+                        android:layout_width="20.0dp"
+                        android:layout_height="20.0dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/icon_my_address" />
+
+                    <TextView
+                        android:id="@+id/main_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:drawablePadding="2.0dip"
+                        android:ellipsize="start"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="2.0dip"
+                        android:paddingLeft="10.0dip"
+                        android:paddingRight="10.0dip"
+                        android:paddingTop="2.0dip"
+                        android:shadowColor="#00000000"
+                        android:singleLine="true"
+                        android:text=">"
+                        android:textColor="#ffffffff"
+                        android:textSize="16.0sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/LinearLayout04"
+                    android:gravity="center_horizontal" >
+
+                    <EditText
+                        android:id="@+id/searchshop_keyword"
+                        android:layout_width="200dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="25dp"
+                        android:background="#ffffff"
+                        android:drawableLeft="@drawable/com_ic_search"
+                        android:hint="搜索"
+                        android:padding="5dp"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:id="@+id/title_bar_right_btn"
+                        android:layout_width="22.0dp"
+                        android:layout_height="22.0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15.0dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@drawable/btn_search"
+                        android:textColor="#ffffff"
+                        android:textSize="10.0dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <com.ihangjing.HJControls.HJListView
+                android:id="@+id/lv_content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/index_banner_01"
+                android:cacheColorHint="#00000000"
+                android:divider="#e8e8e8"
+                android:dividerHeight="1.0dp"
+                android:scrollbars="none" />
+
+            <LinearLayout
+                android:id="@+id/ll_btn_opt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/index_banner_01"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <com.ihangjing.HJControls.HJSelectButton
+                            android:id="@+id/btn_orderby"
+                            style="@style/near_menu_order_tv"
+                            android:drawableRight="@drawable/ic_arrow_down"
+                            android:text="@string/public_all_type" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="2.0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10.0dp"
+                        android:background="@drawable/vertical_line" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <com.ihangjing.HJControls.HJSelectButton
+                            android:id="@+id/btn_shoptype"
+                            style="@style/near_menu_order_tv"
+                            android:drawableRight="@drawable/icon_transparent"
+                            android:text="@string/shop_list_default" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="2.0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10.0dp"
+                        android:background="@drawable/vertical_line" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <com.ihangjing.HJControls.HJSelectButton
+                            android:id="@+id/btn_shoptop"
+                            style="@style/near_menu_order_tv"
+                            android:drawableRight="@drawable/icon_transparent"
+                            android:text="@string/shop_list_all" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="2.0dip"
+                    android:layout_marginTop="1.0dp"
+                    android:background="@drawable/index_shadow_line_top" />
+            </LinearLayout>
+   
+
+</RelativeLayout>

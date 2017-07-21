@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="主页" android:id="@+id/gotomain"></item>
+    <item android:title="关于" android:id="@+id/gotoabout"></item>
+    <item android:title="退出" android:id="@+id/gotoexit"></item>
+</menu>

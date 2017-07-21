@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+     >
+
+    <include
+        android:id="@+id/register_title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/title_bar" />
+
+    <ImageView
+        android:id="@+id/login_title_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_title_bar"
+        android:layout_marginBottom="20.0dip"
+        android:background="@drawable/second_level_title_line" />
+
+    <EditText
+        android:id="@+id/login_account_et"
+        style="@style/login_register_edit_sytle"
+        android:layout_below="@id/login_title_line"
+        android:layout_marginBottom="10.0dip"
+        android:phoneNumber="true"
+        android:hint="请输入您下单时填写的手机号码" 
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/login_password_tv"
+        style="@style/login_register_text_sytle"
+        android:layout_below="@id/login_account_et"
+        android:text="通过查询订单联系店家催单与改单等操作"
+        android:textColor="@color/deep_black"
+        android:layout_centerInParent="true" />
+
+    <Button
+        android:id="@+id/login_btn"
+        style="@style/red_button_sytle"
+        android:layout_below="@+id/login_password_tv"
+        android:text="确定"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#60000000" >
+
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_bar_height"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_top" >
+
+            <ImageView
+                android:layout_width="174.0dp"
+                android:layout_height="60.0dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/prompt01_03" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/im_click"
+            android:layout_width="174.0dp"
+            android:layout_height="60.0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100.0dp"
+            android:src="@drawable/prompt02_03" />
+    </RelativeLayout>
+
+</LinearLayout>

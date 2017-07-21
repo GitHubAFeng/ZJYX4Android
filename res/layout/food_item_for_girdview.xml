@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_img"
+        android:layout_width="150.0dp"
+        android:layout_height="112.0dp"
+        android:layout_marginLeft="5.0dp"
+        android:layout_marginTop="5.0dp"
+        android:background="@drawable/nopic_shop" >
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="加载"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:textColor="#fb0056"
+        android:textSize="14.0dp" />
+
+    <TextView
+        android:id="@+id/tv_dis"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="加载"
+        android:textColor="#000000"
+        android:textSize="10.0dp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加载"
+            android:textColor="#000000"
+            android:textSize="14.0dp" />
+        
+        <Button 
+            android:id="@+id/btn_go"
+            android:layout_width="80.0dp"
+            android:layout_height="30.0dp"
+            android:background="#fb594b"
+            android:layout_alignParentRight="true"
+            android:text="去看看"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+
+</LinearLayout>

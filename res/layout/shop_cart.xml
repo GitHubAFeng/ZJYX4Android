@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/topbar_bg_color"
+        android:gravity="left"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/title_bar_back_btn"
+            style="@style/title_bar_button_sytle"
+            android:layout_marginLeft="10.0dp"
+            android:background="@drawable/title_back_bg" />
+
+        <TextView
+            android:id="@+id/title_bar_content_tv"
+            style="@style/title_bar_content_sytle"
+            android:layout_width="fill_parent"
+            android:layout_marginRight="60.0dp"
+            android:layout_toRightOf="@+id/title_bar_back_btn"
+            android:gravity="center"
+            android:text="@string/shop_cart_title" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/s_linearLayout8"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/linearLayout1"
+        android:background="@drawable/cart_empty_bg"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/foodlist_listView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/ll_icon"
+            android:background="#ffffff"
+            android:cacheColorHint="#00000000"
+            android:divider="#dfdfdf"
+            android:dividerHeight="1.0dip"
+            android:listSelector="#00000000" />
+
+        <LinearLayout
+            android:id="@+id/ll_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_price"
+            android:layout_marginRight="5.0dp"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_add"
+            android:layout_marginBottom="5.0dp"
+            android:layout_marginRight="5.0dp"
+            android:gravity="right"
+            android:text="@string/shop_cart_all_price"
+            android:textColor="#843300" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="100.0dp"
+            android:layout_height="40.0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5.0dp"
+            android:layout_marginRight="5.0dp"
+            android:textColor="#ffffff"
+            		android:text="去结算"
+                    android:background="@color/topbar_bg_color"  />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/shopcart_scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        android:layout_below="@+id/linearLayout1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/s_linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingBottom="40.0dip" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout9"
+                style="@style/words_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/words_bg"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical" >
+
+                <RadioGroup
+                    android:id="@+id/rg_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rb_new"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/shop_cart_map_addr"
+                        android:textColor="#ff000000" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rb_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shop_cart_my_addr"
+                        android:textColor="#ff000000" >
+                    </RadioButton>
+
+                    <Button
+                        android:id="@+id/btn_reminders"
+                        android:layout_width="100.0dp"
+                        android:layout_height="30.0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.7"
+                        android:background="@color/topbar_bg_color"
+                        android:text="@string/shop_cart_new_addr"
+                        android:textColor="#ffffff"
+                        android:textSize="14.0sp"
+                        android:visibility="gone" />
+                </RadioGroup>
+
+                <!-- 收件人 -->
+                <!-- 新地址 -->
+
+                <LinearLayout
+                    android:id="@+id/ll_new_addr"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tvUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btn_reminders"
+                        android:layout_marginBottom="2.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:text="@string/user_name"
+                        android:textColor="#ff000000"
+                        android:textSize="16.0sp" />
+
+                    <EditText
+                        android:id="@+id/etUserName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_bg_inputname"
+                        android:hint="@string/user_hidden"
+                        android:paddingBottom="4.0dip"
+                        android:paddingLeft="10.0dip"
+                        android:paddingRight="10.0dip"
+                        android:paddingTop="4.0dip"
+                        android:singleLine="true"
+                        android:textColor="#ff000000"
+                        android:textSize="18.0sp" />
+
+                    <TextView
+                        android:id="@+id/s_textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:text="@string/user_phone"
+                        android:textColor="#ff000000"
+                        android:textSize="16.0sp" />
+
+                    <EditText
+                        android:id="@+id/etPhone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_bg_inputname"
+                        android:hint="@string/no_phone"
+                        android:paddingBottom="4.0dip"
+                        android:paddingLeft="10.0dip"
+                        android:paddingRight="10.0dip"
+                        android:paddingTop="4.0dip"
+                        android:phoneNumber="true"
+                        android:singleLine="true"
+                        android:textColor="#ff000000"
+                        android:textSize="18.0sp" />
+
+                    <TextView
+                        android:id="@+id/s_textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:text="@string/room_addr"
+                        android:textColor="#ff000000"
+                        android:textSize="16.0sp"
+                        android:visibility="visible" />
+
+                    <EditText
+                        android:id="@+id/et_gps_addr"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50.0dp"
+                        android:layout_marginBottom="5.0dip"
+                        android:background="@drawable/selector_bg_inputname"
+                        android:enabled="false"
+                        android:gravity="top|left|center"
+                        android:hint="@string/shop_cart_gps_addr"
+                        android:paddingBottom="4.0dip"
+                        android:paddingLeft="10.0dip"
+                        android:paddingRight="10.0dip"
+                        android:paddingTop="4.0dip"
+                        android:textColor="#ff000000"
+                        android:textSize="18.0sp" />
+
+                    <EditText
+                        android:id="@+id/etAddress"
+                        android:layout_width="fill_parent"
+                        android:layout_height="70.0dip"
+                        android:layout_marginBottom="5.0dip"
+                        android:background="@drawable/selector_bg_inputname"
+                        android:gravity="top|left|center"
+                        android:hint="@string/shop_cart_add_detail"
+                        android:paddingBottom="4.0dip"
+                        android:paddingLeft="10.0dip"
+                        android:paddingRight="10.0dip"
+                        android:paddingTop="4.0dip"
+                        android:textColor="#ff000000"
+                        android:textSize="18.0sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:text="@string/order_detail_send_time"
+                    android:textColor="#ff000000"
+                    android:textSize="16.0sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioGroup
+                        android:id="@+id/rg_sendtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/rb_time1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/shop_cart_time_must"
+                            android:textColor="#ff000000" >
+                        </RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/tb_time2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shop_cart_s_time"
+                            android:textColor="#ff000000" >
+                        </RadioButton>
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/etSentDate"
+                        android:layout_width="140dip"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_bg_inputname"
+                        android:hint="@string/shop_cart_s_date"
+                        android:paddingBottom="4.0dip"
+                        android:paddingLeft="10.0dip"
+                        android:paddingRight="10.0dip"
+                        android:paddingTop="4.0dip"
+                        android:textColor="#ff000000"
+                        android:textSize="16.0sp"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/etSentTime"
+                        android:layout_width="130dip"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/rg_sendtime"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/selector_bg_inputname"
+                        android:hint="@string/shop_cart_s_time"
+                        android:paddingBottom="4.0dip"
+                        android:paddingLeft="10.0dip"
+                        android:paddingRight="10.0dip"
+                        android:paddingTop="4.0dip"
+                        android:textColor="#ff000000"
+                        android:textSize="16.0sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:text="@string/shop_cart_send_mode"
+                        android:textColor="#ff000000"
+                        android:textSize="16.0sp" />
+
+                    <RadioGroup
+                        android:id="@+id/eattyperadioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/reattype0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/shop_cart_send_mode_1"
+                            android:textColor="#ff000000" >
+                        </RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/reattype1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16.0dp"
+                            android:text="@string/shop_cart_send_mode_2"
+                            android:textColor="#ff000000"
+                            android:visibility="gone" >
+                        </RadioButton>
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:id="@+id/ll_self_state"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shop_cart_send_1"
+                            android:textColor="#000000" />
+
+                        <EditText
+                            android:id="@+id/et_self_state"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/shop_cart_s_get_addr" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:text="@string/order_detail_pay_mode"
+                        android:textColor="#ff000000"
+                        android:textSize="16.0sp" />
+
+                    <RadioGroup
+                        android:id="@+id/pay_typeradioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        
+                    </RadioGroup>
+
+                    
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2.0dip"
+                        android:layout_marginTop="5.0dip"
+                        android:text="@string/shop_cart_card"
+                        android:textColor="#ff000000"
+                        android:textSize="16.0sp" />
+
+                    <RadioGroup
+                        android:id="@+id/coupon_radioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <RadioButton
+                            android:id="@+id/coupon_type0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/shop_cart_card_n"
+                            android:textColor="#ff000000" >
+                        </RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/coupon_type1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="120.0dp"
+                            android:layout_marginTop="-50.0dp"
+                            android:text="@string/shop_cart_card_y"
+                            android:textColor="#ff000000" >
+                        </RadioButton>
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:id="@+id/ll_couponlist"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10.0dip"
+                        android:background="@drawable/words_bg"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="10.0dip"
+                        android:paddingLeft="5.0dip"
+                        android:paddingRight="5.0dip"
+                        android:paddingTop="10.0dip"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:text="@string/ordercontent_note"
+                    android:textColor="#ff000000"
+                    android:textSize="16.0sp" />
+
+                <EditText
+                    android:id="@+id/et_remark"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70.0dip"
+                    android:layout_marginBottom="5.0dip"
+                    android:background="@drawable/selector_bg_inputname"
+                    android:gravity="top|left|center"
+                    android:hint="@string/shop_cart_remark_notice"
+                    android:paddingBottom="4.0dip"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:paddingTop="4.0dip"
+                    android:textColor="#ff000000"
+                    android:textSize="18.0sp" />
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="100.0dp"
+                    android:layout_height="40.0dp"
+                    android:layout_marginBottom="5.0dp"
+                    android:layout_marginRight="5.0dp"
+                    android:textColor="#ffffff"
+            		android:text="提交订单"
+                    android:background="@color/topbar_bg_color" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

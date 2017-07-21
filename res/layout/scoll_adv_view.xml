@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:HJAndroid="http://schemas.android.com/apk/res/com.ihangjing.ZJYXForAndroid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.ihangjing.HJControls.HJScorllADV
+        android:id="@+id/iv_adv"
+        android:layout_width="fill_parent"
+        android:layout_height="150.0dp"
+        HJAndroid:backgoundSrc="@drawable/mindex"
+        HJAndroid:isShowButton="false"
+        HJAndroid:isShowDots="false"
+        HJAndroid:scorllTime="5" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="2.0dip"
+        android:layout_marginTop="1.0dp"
+        android:background="@drawable/index_shadow_line_top" />
+
+    <RelativeLayout
+        android:id="@+id/shoplist_loadingdata_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.0dip" >
+
+        <TextView
+            android:id="@+id/near_restaurant_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="4.0dip"
+            android:text="数据加载中..."
+            android:textColor="@color/grey"
+            android:textSize="@dimen/content_title_size" />
+
+        <ProgressBar
+            android:id="@+id/near_restaurant_progress_bar"
+            style="@style/loading_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/near_restaurant_text" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/near_rearaurant_loadingdata_null"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.0dip"
+        android:gravity="center_horizontal"
+        android:text="未检索到商家"
+        android:textColor="@color/black"
+        android:textSize="@dimen/content_title_size"
+        android:visibility="gone" />
+
+</LinearLayout>
